@@ -121,7 +121,7 @@ assets/brand/
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#13211C">
-<meta property="og:image" content="https://raw.githubusercontent.com/0xdolan/zimankit/main/assets/brand/social/og-image-1200x630.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/kanilabs/zimankit/main/assets/brand/social/og-image-1200x630.png">
 ```
 
 ## Sources
@@ -139,7 +139,7 @@ On deq:
 
 On Roj and the flag:
 
-- "The name and the logo", Roj. <https://0xdolan.github.io/roj/story.html>
+- "The name and the logo", Roj. <https://kanilabs.github.io/roj/story.html>
 - *Flag of Kurdistan*, Wikipedia. <https://en.wikipedia.org/wiki/Flag_of_Kurdistan>
 - *Flag_of_Kurdistan.svg*, Wikimedia Commons, public domain: the sun's path. <https://commons.wikimedia.org/wiki/File:Flag_of_Kurdistan.svg>
 - *Roj (stêrk)*, Kurdish Wikipedia. <https://ku.wikipedia.org/wiki/Roj_(st%C3%AArk)>

@@ -26,7 +26,7 @@ from ..config import Config
 SCHEMA_VERSION = 1
 NOTICE = """\
 Kurdish Lexicon, built with zimankit {version}
-https://github.com/0xdolan/zimankit
+https://github.com/kanilabs/zimankit
 
 The data in this bundle is licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0):
