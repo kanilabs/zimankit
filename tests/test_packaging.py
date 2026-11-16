@@ -19,7 +19,7 @@ def test_readme_links_are_absolute():
 
 def test_readme_images_can_render_on_pypi():
     text = (ROOT / "README.md").read_text(encoding="utf-8")
-    for url in re.findall(r'<img src="https://raw\.githubusercontent\.com/0xdolan/zimankit/main/([^"]+)"', text):
+    for url in re.findall(r'<img src="https://raw\.githubusercontent\.com/kanilabs/zimankit/main/([^"]+)"', text):
         assert (ROOT / url).exists(), url
 
 

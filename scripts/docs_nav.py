@@ -48,7 +48,7 @@ for i, p in enumerate(chapters):
 lines = ['<p align="center"><img src="../assets/brand/logo/png/zimankit-logo-128.png" width="96" alt="zimankit logo"></p>', "",
          "# zimankit documentation", "", "Kurdish (Central / Sorani `ckb` and Northern / Kurmanji `kmr`) language skills: "
          "orthography, IPA, morphology, verbs, ergativity, sentence structure, language identification and wordlist building.", "",
-         "Back to the [project README](../README.md) · [website](https://0xdolan.github.io/zimankit/) · "
+         "Back to the [project README](../README.md) · [website](https://kanilabs.github.io/zimankit/) · "
          "[agent skills](../skills/README.md) · [examples](../examples/README.md) · "
          "[the logo and its story](../assets/brand/README.md)", "",
          "**Learning Kurdish?** Start with the [tutorials](tutorials/README.md): complete beginner-to-advanced courses for "

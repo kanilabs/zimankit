@@ -51,7 +51,7 @@ gzip -9n -c CHANGELOG.md > "$DOC/changelog.gz"
 cat > "$DOC/copyright" <<EOF
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: zimankit
-Source: https://github.com/0xdolan/zimankit
+Source: https://github.com/kanilabs/zimankit
 
 Files: *
 Copyright: Dolan H.
@@ -66,7 +66,7 @@ Priority: optional
 Architecture: all
 Depends: python3 (>= 3.11)
 Maintainer: Dolan H. <https://github.com/0xdolan>
-Homepage: https://0xdolan.github.io/zimankit/
+Homepage: https://kanilabs.github.io/zimankit/
 Installed-Size: $(du -sk "$ROOT/usr" | cut -f1)
 Description: Kurdish language toolkit for Sorani and Kurmanji
  zimankit gives Central Kurdish (Sorani) and Northern Kurdish (Kurmanji)
