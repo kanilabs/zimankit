@@ -7,7 +7,7 @@ description: Show how the words of a Central Kurdish (Sorani) or Northern Kurdis
 
 Show how the words of a Central Kurdish (Sorani) or Northern Kurdish (Kurmanji) sentence depend on each other: the head and Universal Dependencies relation of each word, word order, split-ergative alignment and a plain-language explanation of each word. Use for sentence diagrams, grammar explanations, finding subjects and objects, or teaching Kurdish syntax.
 
-Full explanation: [docs/22-sentence-structure.md](../../docs/22-sentence-structure.md). Try it as a clickable diagram in the [playground](https://0xdolan.github.io/zimankit/playground.html).
+Full explanation: [docs/22-sentence-structure.md](../../docs/22-sentence-structure.md). Try it as a clickable diagram in the [playground](https://kanilabs.github.io/zimankit/playground.html).
 
 ## Commands
 

@@ -10,9 +10,9 @@
 
 It is a set of rules over zimankit's morphology, not a trained parser. It is reliable for simple clauses and approximate for complex ones. See [Limits](#limits).
 
-<p align="center"><a href="https://0xdolan.github.io/zimankit/playground.html"><img src="../assets/brand/screenshots/website-sentence-word.png" width="760" alt="a Kurmanji sentence drawn as coloured arrows between its words, with one word selected and explained"></a></p>
+<p align="center"><a href="https://kanilabs.github.io/zimankit/playground.html"><img src="../assets/brand/screenshots/website-sentence-word.png" width="760" alt="a Kurmanji sentence drawn as coloured arrows between its words, with one word selected and explained"></a></p>
 
-The [playground](https://0xdolan.github.io/zimankit/playground.html) draws the result as a diagram. Click a word, an arrow or a colour to see its role, position, form and what depends on it, with links to the lessons that explain it. "Show all", Escape or a click on the empty part of the diagram clears the selection. You can also choose the colours, and export the diagram as PNG, JPG, SVG or PDF in standard social media sizes.
+The [playground](https://kanilabs.github.io/zimankit/playground.html) draws the result as a diagram. Click a word, an arrow or a colour to see its role, position, form and what depends on it, with links to the lessons that explain it. "Show all", Escape or a click on the empty part of the diagram clears the selection. You can also choose the colours, and export the diagram as PNG, JPG, SVG or PDF in standard social media sizes.
 
 ## Command line
 
@@ -106,7 +106,7 @@ For Kurmanji, the agreement check is the same as `zimankit ergativity`. A plural
 
 - **Sorani gaps.** The parser knows the core verbs only, so a compound verb outside that list (تێک دەچم) is read word by word, and the noun of `دەستم لێ دا` is labelled `obj`. A definite adjective phrase is recognised only without a transitive verb (پیاوە باشەکە هات), because before one it could be a subject and an object (قوتابخانە کتێبەکەی نارد). `notes` gives Sorani agreement warnings: no agent in a past transitive (من نان خوارد), a clitic on an intransitive (هاتمان), a pronoun that disagrees with the verb (من دەچیت), and a plural verb after a singular definite subject (پیاوەکە دەچن), which is worded as usage because no grammar checked states a rule. See [chapter 23](23-ckb-written-standard.md#not-implemented-yet).
 
-If a simple sentence gets a wrong structure, please [open an issue](https://github.com/0xdolan/zimankit/issues) with the sentence.
+If a simple sentence gets a wrong structure, please [open an issue](https://github.com/kanilabs/zimankit/issues) with the sentence.
 
 <!-- nav:bottom -->
 ---
