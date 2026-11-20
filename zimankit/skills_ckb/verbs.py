@@ -34,8 +34,9 @@ SET2 = {"1sg": "م", "2sg": "ت", "3sg": "ی", "1pl": "مان", "2pl": "تان",
 # longest first; simple and complex (ناسادە) preverbs
 PREVERBS = ("پێدا", "تێدا", "پێڕا", "تێڕا", "لێڕا", "تێوە", "پێوە", "لێوە", "پێک", "تێک", "ڕێک", "وێک", "لێک",
             "هەڵ", "وەر", "دەر", "دا", "ڕا", "ڕۆ", "ڕێ", "تێ", "پێ", "لێ")
-# written apart in every tense (تێک دەچم, پێ دەکەنێت); the others only around a clitic (هەڵدەگرم, هەڵم گرت)
-SPLIT_PREVERBS = frozenset({"پێ", "تێ", "لێ", "پێک", "تێک", "ڕێک"})
+# written apart in every tense (تێک دەچم, پێ دەکەنێت, دەر دەچم); the others only around a clitic
+# (هەڵدەگرم, هەڵم گرت). دەر follows Diyako's rule (DG:1519); solid دەردەچم is still analysed.
+SPLIT_PREVERBS = frozenset({"پێ", "تێ", "لێ", "دەر", "پێک", "تێک", "ڕێک"})
 VOWEL_END = "اەۆێیو"
 PERFECT_LONG = {"1sg": "مە", "2sg": "یتە", "3sg": "ە", "1pl": "ینە", "2pl": "نە", "3pl": "نە"}
 PERFECT_SHORT = {"1sg": "م", "2sg": "یت", "3sg": "ە", "1pl": "ین", "2pl": "ن", "3pl": "ن"}

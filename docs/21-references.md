@@ -19,14 +19,18 @@ Grammars and linguistic descriptions that the rules follow (general scholarship;
 Kurdish-language sources for the Central Kurdish written standard and grammar, as used in [chapter 23](23-ckb-written-standard.md):
 
 * دیاکۆ هاشمی, [ڕێنووسی زمانی کوردی](https://diyako.yageyziman.com/%da%95%db%8e%d9%86%d9%88%d9%88%d8%b3/), and its [list of grammar works](https://diyako.yageyziman.com/%da%95%db%8e%d8%b2%d9%85%d8%a7%d9%86/), through which the works below were reached.
+* دیاکۆ هاشمی, [خاڵبەندی](https://diyako.yageyziman.com/%d8%ae%d8%a7%da%b5%d8%a8%db%95%d9%86%d8%af%db%8c/) (punctuation).
 * [چاوگی لێکدراو](https://zkurd.org/%da%86%d8%a7%d9%88%da%af%db%8c-%d9%84%db%8e%da%a9%d8%af%d8%b1%d8%a7%d9%88/), zkurd.org.
 * ئەکادیمیای کوردی, spelling pamphlets of [2004](http://www.yageyziman.com/pdfekan/Renusi_Kurdi_Akadimyay_Kurdi_2004.pdf) and [2010](http://www.yageyziman.com/pdfekan/Renusi_Kurdi_Akadimyay_Kurdi_2010.pdf).
 * [ڕێزمانی وێنەیی](http://www.yageyziman.com/pdfs/Rezimani_Weneyi.pdf), شنە عەزیز حەمە ڕەحیم.
 * [ڕێزمانی کوردی, grade 12 handout](http://www.yageyziman.com/rezman-12.pdf), a teacher's handout.
 * [ڕێزمانی کوردی](http://www.yageyziman.com/Rezmani_Kurdi_Neriman_Xoshnaw.pdf), نەریمان خۆشناو.
+* [ڕستەسازی](http://www.yageyziman.com/Neriman%20Xoshnaw_Zimanewani%20u/N_Ristesazi.pdf) and [ڕێنووس و خاڵبەندی](http://yageyziman.com/pdfs/%DA%95%DB%8E%D9%86%D9%88%D9%88%D8%B3%20%D9%88%20%D8%AE%D8%A7%DA%B5%D8%A8%DB%95%D9%86%D8%AF%DB%8C.pdf) (2016), نەریمان عەبدوڵا خۆشناو; read from OCR, so quoted examples were checked by hand.
 * [ڕێزمانی ئاخاوتنی کوردی](http://www.yageyziman.com/rezman_korri_zanyari.pdf), کۆڕی زانیاریی کورد.
 * [ڕستەناسی](http://www.yageyziman.com/pdfs/syntax_Shaswar.pdf), شاسوار هەرشەمی; [جێگری بکەر](http://www.yageyziman.com/Adnan_Cegir_Biker.htm), عەدنان ئەحمەد.
 * [بابەتە ڕێزمانییەکان](http://diyako.yageyziman.com/2023/04/08/mamosta-abdullah-abdulqader/), عبدالله عبدالقادر علی.
+
+Several of these PDFs were found through the [ڕێزمانی کوردی](https://rezmanikurde.blogspot.com/) blog, which collects Kurdish grammar books.
 
 ## Articles used in the literature audit
 

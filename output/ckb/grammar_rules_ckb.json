@@ -341,6 +341,23 @@
             }
           },
           {
+            "form": "ێ",
+            "tag": "VOC",
+            "after": "C",
+            "features": {
+              "vocative": "f"
+            }
+          },
+          {
+            "form": "ینە",
+            "tag": "VOC.PL",
+            "after": "C",
+            "features": {
+              "number": "pl",
+              "vocative": "pl"
+            }
+          },
+          {
             "form": "م",
             "tag": "COP.1SG",
             "after": "DA",

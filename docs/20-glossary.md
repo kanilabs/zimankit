@@ -19,7 +19,7 @@
 | definite / indefinite | binavkirî / nebinavkirî; ناسراو / نەناسراو | |
 | compound linker | ئامرازی لێکدەر، ناوبەند | -ە-، -و-، -بە- inside a compound: گوڵەگەنم، دەموچاو. ئامرازی لێکدەر also means a subordinator in some grammars |
 | glide | ناوبەند | ی or و between vowels: مامۆستایان. ناوبەند also means a compound linker |
-| vocative | بانگکردن | کوڕە، کچێ، کوڕینە |
+| vocative | بانگکردن; the particles ئامرازی بانگکردن ئەی، هەی | کوڕە، کچێ، کوڕینە; ئەی کوڕم! |
 | noun phrase | گرێی ناوی | spaced, not one word; modifier دیارخەر, head دیارخراو; contrast ناوی لێکدراو |
 | demonstrative pronoun / adjective | جێناوی نیشانە / هاوەڵناوی نیشانە | ئەمە، ئەوانە / ئەم…ە، ئەو…ە |
 | collective noun | ناوی کۆمەڵ | سوپا، گەل |
@@ -28,7 +28,7 @@
 | prefix / suffix | پێشگر / پاشگر | |
 | simple / derived / compound word | سادە / داڕێژراو / لێکدراو | |
 | preposition / postposition / circumposition | پێشبەند / پاشبەند / دەوربەند، لابەند | لە ماڵدا |
-| adposition | ئامرازی پەیوەندی | also the name of the goal -ە on a verb |
+| adposition | ئامرازی پەیوەندی | also the name of the goal -ە on a verb. In Hashemi's grammar ئامرازی پەیوەندی is wider: coordinators, the ezafe and the negation particles |
 | ZWNJ | نیوەبۆشایی | U+200C, prevents joining without a space |
 | G2P | — | grapheme-to-phoneme conversion |
 | LID | — | language identification |
@@ -39,18 +39,22 @@
 | Hawar | — | the Latin alphabet of Kurmanji (1932) |
 | subject | kirde / بکەر | who or what does the action; `nsubj` |
 | object | bireser / بەرکار | what the action is done to; `obj` |
-| subject of a copula | نیهاد | `nsubj` of a predicate |
+| subject of a copula | نیهاد (also written نەهاد) | `nsubj` of a predicate |
+| predicate | گوزارە | what a non-verbal clause says of its subject: ئاسمان **شینە** |
 | subject of a passive | جێگری بکەر | the active object after promotion; `nsubj:pass` |
 | passive | کاری بکەرنادیار | agent unstated, marker را / رێ |
 | copula | کاری ناتەواو | ە، بوو، دەبێت |
 | complement | تەواوکەری بەیاریدە; تەواوکەری ڕاستەوخۆ | a word governed by an adposition; the direct predicate of a copula |
-| main / subordinate clause | ڕستەی سەرەکی / ڕستەی شوێنکەوتوو | |
+| main / subordinate clause | ڕستەی سەرەکی / ڕستەی شوێنکەوتوو (also ڕستەی پاشکۆ) | |
+| reciprocal pronoun | جێناوی هاوبەش | یەکتر |
 | condition / answer clause | پارستە / شارستە | |
 | complex sentence | ڕستەی تێکەڵ (also ڕستەی ئاوێتە) | |
 | coordinated sentence | ڕستەی لێکدراو | |
 | subordinator | ئامرازی گەیەنەر (also ئامرازی لێکدەر) | |
+| coordinator | ئامرازی لێکدەر (Hashemi) | و، یان، بەڵام |
 | person-marker sets | کۆمەڵەی یەکەم … چوارەم | the school numbering: see [chapter 10](10-ckb-verbs.md#agreement) |
-| tense names | ڕانەبردوو; ڕابردووی نزیک، بەردەوام، تەواو، دوور; دانانی; داخوازی | present; past simple, progressive, perfect, past perfect; subjunctive; imperative |
+| tense names | ڕانەبردوو; ڕابردووی نزیک، بەردەوام، تەواو، دوور; دانانی; داخوازی (also spelled ڕانەبوردوو, ڕابوردوو) | present; past simple, progressive, perfect, past perfect; subjunctive; imperative |
+| mood | ڕێژە: ڕاگەیاندن، دانانی، فەرماندان (داخوازی) | indicative, subjunctive, imperative |
 | head, dependent | — | in a dependency structure, each word (the dependent) hangs from one other word (its head) |
 | root | — | the word that heads the whole sentence: the main verb or the predicate |
 | deprel | — | dependency relation: the label on the link from a head to a dependent |
