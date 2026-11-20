@@ -4,6 +4,10 @@ All notable changes to zimankit are recorded here. The format follows [Keep a Ch
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-20
+
+Checked against the Sorani grammar sources collected from the rezmanikurdi blog, Hashemi's grammar and ڕێنووس pages, and the Kurdish Academy spelling pamphlet; the sources are listed in [chapter 21](docs/21-references.md).
+
 ### Added
 
 - **Central Kurdish vocative**: feminine `کچێ` and plural `کچینە`, `کوڕینە` are recognised (`vocative=f`, `vocative=pl`), as in Hashemi's punctuation page and the ڕێنووس و خاڵبەندی handbook. They are not generated and never add a form to the build ([chapter 9](docs/09-ckb-morphology.md)).
@@ -11,6 +15,7 @@ All notable changes to zimankit are recorded here. The format follows [Keep a Ch
 ### Changed
 
 - **Central Kurdish spacing**: verbs with the preverb دەر are written apart in every tense, as in Hashemi's grammar: `دەر دەچم`, `دەر چووم`, `دەر کەوت`. Solid `دەردەچم` is still read ([chapter 23](docs/23-ckb-written-standard.md#where-the-sources-disagree)).
+- **Links**: repository and website links now point to the kanilabs organisation (<https://github.com/kanilabs/zimankit>).
 
 ### Fixed
 
@@ -122,7 +127,8 @@ The first release.
 - **Releases**: wheel, sdist, a Debian package and source archives, built by `scripts/build_release.sh` and published by GitHub Actions when a version tag is pushed. Continuous integration runs the tests on Python 3.11 to 3.13.
 - **Website**: <https://kanilabs.github.io/zimankit/> has the guide, the story of the logo, the brand kit and a live playground that runs zimankit in the browser.
 
-[Unreleased]: https://github.com/kanilabs/zimankit/compare/v0.4.0...develop
+[Unreleased]: https://github.com/kanilabs/zimankit/compare/v0.5.0...develop
+[0.5.0]: https://github.com/kanilabs/zimankit/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/kanilabs/zimankit/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/kanilabs/zimankit/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/kanilabs/zimankit/compare/v0.2.0...v0.3.0
