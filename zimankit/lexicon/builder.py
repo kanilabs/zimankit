@@ -323,7 +323,8 @@ def build(cfg: Config, lang: str) -> dict:
     lemma_set = set(lemmas)
 
     for w, alist, problems in results:
-        a = alist[0] if alist else None
+        # a vocative (کچینە) is recognised at analysis time but never adds a form to the build
+        a = next((x for x in alist or () if "vocative" not in x.features), None)
         freq = counts.get(w, 0)
         wtags = set(tags.get(w, "").split(",")) - {""}
         if _denied(w, cfg.deny_tokens):
@@ -359,7 +360,7 @@ def build(cfg: Config, lang: str) -> dict:
                 )
                 return finite or len(last) >= 2 or last == "ی" or counts.get(x.lemma, 0) >= freq
 
-            posless_inflected = next((x for x in alist or [] if plausible(x)), None)
+            posless_inflected = next((x for x in alist or [] if plausible(x) and "vocative" not in x.features), None)
         if posless_inflected is not None:
             a = posless_inflected
             srcs |= lemmas[w].sources
@@ -431,7 +432,7 @@ def build(cfg: Config, lang: str) -> dict:
     # Central Kurdish spelling variants of accepted forms
     variants: list[tuple[str, str, int, int]] = []
     if lang == "ckb":
-        from ..skills_ckb.orthography import STANDARD_OVERRIDES, spelling_variants, validate_word
+        from ..skills_ckb.orthography import STANDARD_OVERRIDES, single_y_copula, spelling_variants, validate_word
 
         ratio = cfg.settings["ckb"]["variant_ratio"]
         for w in pending_variants:
@@ -449,6 +450,9 @@ def build(cfg: Config, lang: str) -> dict:
         # frequency cannot pick the standard form here: the common spelling is the non-standard one
         variants += [(w, std, accepted[w].frequency, accepted[std].frequency)
                      for w, std in STANDARD_OVERRIDES.items() if w in accepted and std in accepted]
+        # سپیە -> سپییە, when both spellings are attested
+        variants += [(w, std, accepted[w].frequency, accepted[std].frequency)
+                     for w in accepted if (std := single_y_copula(w, accepted)) and std in accepted]
     else:
         rejected += [(w, counts.get(w, 0), "unknown stem (not in lexicon, too rare for a new lemma)") for w in pending_variants]
 

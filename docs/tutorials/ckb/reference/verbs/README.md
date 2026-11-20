@@ -93,7 +93,7 @@ Every verb below is conjugated in full on its own page: all tenses, moods, negat
 | [**هەڵگرتن**](hellgirtin.md) | hellgirtin | to pick up, to lift | transitive | هەڵدەگرم | هەڵی گرت |
 | [**هەڵبژاردن**](hellbijardin.md) | hellbijardin | to elect, to choose; election | transitive | هەڵدەبژێرم | هەڵی بژارد |
 | [**وەرگرتن**](wergirtin.md) | wergirtin | to receive | transitive | وەردەگرم | وەری گرت |
-| [**دەرکردن**](derkirdin.md) | derkirdin | to expel, to issue | transitive | دەردەکەم | دەری کرد |
+| [**دەرکردن**](derkirdin.md) | derkirdin | to expel, to issue | transitive | دەر دەکەم | دەری کرد |
 | [**تێگەیشتن**](tegeysitin.md) | têgeyşitin | to understand | intransitive | تێ دەگەم | تێ گەیشت |
 | [**داخستن**](daxsitin.md) | daxsitin | to close | transitive | دادەخەم | دای خست |
 | [**دانیشتن**](danistin.md) | danîştin | to sit down | intransitive | دادەنیشم | دانیشت |
@@ -101,8 +101,8 @@ Every verb below is conjugated in full on its own page: all tenses, moods, negat
 | [**ڕاکردن**](rakridin.md) | rakridin | to run (away) | transitive | ڕادەکەم | ڕای کرد |
 | [**لێدان**](ledan.md) | lêdan | to hit, to beat | transitive | لێ دەدەم | لێی دا |
 | [**پێکەنین**](pekenin.md) | pêkenîn | to laugh | intransitive | پێ دەکەنم | پێ کەنی |
-| [**دەرکەوتن**](derkewtin.md) | derkewtin | to appear, to come out | intransitive | دەردەکەوم | دەرکەوت |
-| [**دەرچوون**](dercun.md) | derçûn | to go out, to graduate | intransitive | دەردەچم | دەرچوو |
+| [**دەرکەوتن**](derkewtin.md) | derkewtin | to appear, to come out | intransitive | دەر دەکەوم | دەر کەوت |
+| [**دەرچوون**](dercun.md) | derçûn | to go out, to graduate | intransitive | دەر دەچم | دەر چوو |
 | [**هەڵسان**](hellsan.md) | hellsan | to get up, to rise | intransitive | دەهەڵسم | هەڵسا |
 | [**پێکهاتن**](pekhatin.md) | pêkhatin | to consist of, to be formed | intransitive | پێک دێم | پێک هات |
 | [**بەکارهێنان**](bekarhenan.md) | bekarhênan | to use | transitive | بەکار دەهێنم | بەکاری هێنا |

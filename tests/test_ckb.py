@@ -155,6 +155,21 @@ def test_validate_reports_the_standard_but_builder_check_does_not(word):
     assert not structural_problems(word)
 
 
+@pytest.mark.parametrize("word, standard", [("ژییان", "ژیان"), ("ئەلفوبێ", "ئەلفبێ"), ("حەوتسەد", "حەوت سەد")])
+def test_validate_names_the_standard_spelling(word, standard):
+    assert f"the standard spelling is {standard}" in validate_word(word)
+
+
+def test_validate_single_y_before_copula_needs_a_lexicon():
+    known = {"سپی", "کوردی", "مامۆستا", "قسە"}
+    assert "the standard spelling is سپییە" in validate_word("سپیە", known)
+    assert "the standard spelling is کوردییە" in validate_word("کوردیە", known)
+    for word in ("سپییە", "مامۆستایە", "قسەیە", "سوریە"):
+        assert validate_word(word, known) == [], word
+    assert validate_word("سپیە") == []  # no lexicon, no guess
+    assert validate_word("سپیە", known | {"سپیە"}) == []  # a listed word stays
+
+
 @pytest.mark.parametrize("word", ["چوو", "ئاو", "لێو", "شیو", "تۆو", "نییە", "کۆتایی", "تو"])
 def test_validate_accepts_standard_spellings(word):
     assert validate_word(word) == []
@@ -259,6 +274,33 @@ def test_short_affixes_do_not_overmatch(word, not_segmentation):
     assert CkbAnalyzer(lex).best(word).segmentation != not_segmentation
 
 
+
+@pytest.mark.parametrize("word, lemma", [("مەسەلان", "مەسەلە"), ("پەنجەران", "پەنجەرە"), ("شاران", "شار"), ("قوتابخانان", "قوتابخانە")])
+def test_plural_of_e_final_noun_drops_e(word, lemma):
+    """قوتابخانان is قوتابخانە+ان; when the bare stem is listed too, the commoner word wins."""
+    freqs = {"مەسەل": 300, "مەسەلە": 20000, "نام": 460, "نامە": 20584, "پەنجەر": 303, "پەنجەرە": 3464, "شار": 55445, "شارە": 34891, "قوتابخانە": 9000}
+    lex = SimpleLexicon(freqs=freqs)
+    for w in freqs:
+        lex.add(w, "NOUN")
+    an = CkbAnalyzer(lex)
+    best = an.best(word)
+    assert (best.lemma, best.features.get("number")) == (lemma, "pl")
+    assert an.best("نامان").pos == "VERB"  # نا+مان "we put" is a verb form, so نامە+ان is not preferred
+
+
+def test_vocative_endings():
+    """کچێ (feminine) and کچینە, کوڕینە (plural) are recognised; ە is one of the readings of final ە."""
+    lex = SimpleLexicon()
+    for w in ("کچ", "کوڕ", "شیر", "شیرینە"):
+        lex.add(w, "NOUN")
+    an = CkbAnalyzer(lex)
+    assert any(a.lemma == "کچ" and a.features.get("vocative") == "f" for a in an.analyze("کچێ"))
+    for word, lemma in (("کچینە", "کچ"), ("کوڕینە", "کوڕ")):
+        best = an.best(word)
+        assert (best.lemma, best.features.get("vocative"), best.features.get("number")) == (lemma, "pl", "pl")
+    assert an.best("شیرینە").lemma == "شیرینە"
+    assert not any("vocative" in a.features for a in an.analyze("دەبینە"))  # دەبین+ە is a verb
+
 def test_listed_word_keeps_its_final_e():
     lex = SimpleLexicon()
     lex.add("خان", "NOUN")
@@ -304,6 +346,15 @@ def test_lookup_split_needs_the_first_part(tokens):
 def test_preverb_spacing_classes():
     idx = verbs.default_index().verbs
     assert not idx["هەڵگرتن"].always_split and idx["پێکهاتن"].always_split and idx["بەکارهێنان"].always_split
+
+
+def test_preverb_der_is_written_apart_and_solid_stays_accepted():
+    vi = verbs.default_index()
+    v = vi.verbs["دەرچوون"]
+    assert v.always_split
+    forms = {f.form: verbs.standard_spelling(v, f) for f in verbs.conjugate(v) if not f.features.get("variant")}
+    assert forms["دەردەچم"] == "دەر دەچم" and forms["دەرچووم"] == "دەر چووم"
+    assert vi.lookup("دەردەچم") and vi.lookup_split(["دەر", "دەچم"])[1].lemma == "دەرچوون"
 
 
 @pytest.mark.parametrize("word, lemma, features", [

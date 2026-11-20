@@ -32,6 +32,7 @@ Also recognised:
 * **Final ە/یە** (`کوردە`, `مامۆستایە`, `ماڵدایە`, `چاکترە`). One word cannot show which job it does: copula, definite ezafe, demonstrative, vocative or short definite. So it gets the tag `E` and the feature `copula=3sg|ezafe.def|dem|voc|def.short`, and the next word and any ئەم/ئەو decide. A word listed in the lexicon stays whole.
 * **Person copula after -دا**: `ماڵ+دا+م` "I am at home" (`copula=1sg`). Elsewhere the same endings are the enclitics, so `باشم` is "my good" here. The sentence parser reads `تۆ زیرەکیت` as a copula when the subject pronoun's person matches.
 * **Other indefinites**: `چرایێک`, `کەسانێک`, and with a known stem `کوڕێ`, `کوڕەک`. `ێ` also marks a place (`لە تارانێ`); it is the same segment, so it is tagged `POSTP.E` with `postposition=e|indef`.
+* **Vocative**: feminine `کچێ` gets a second reading `VOC` with `vocative=f`, ranked just below the indefinite. Plural `کچینە`, `کوڕینە` is `VOC.PL` with `vocative=pl number=pl`, ranked low because it is rare in running text; a stem that is not a noun or adjective, or whose ین form is common (an adjective in ین, a verb such as `دۆزین`), gets none. Both need a listed stem and no other suffix, a listed word such as `شیرینە` stays whole, and a word with a verb reading (`دەبینە`) gets no vocative. Masculine `کوڕە` is the `voc` value of final ە. These forms are recognised, not generated, and the lexicon build never accepts a form on a vocative reading.
 * **Plural -گەل**: `کوڕگەل`. An ە-final noun is recognised in the plural without its ە (`پەنجەر+ان` → `پەنجەرە`), though the sources differ on that form, so `decline` leaves the cell empty.
 * **Contracted definite**: `ماس+ێکە` → `ماسی`.
 * **Adverbs of manner**, when the middle is known: `بە+خێرا+یی`, `بە+جوان+ی`.
@@ -73,6 +74,7 @@ a.segmentation, a.gloss, a.features
 * final `ی`: ezafe *or* 3sg enclitic (`ماڵی باوکم` vs `ماڵی`) → feature `enclitic=3sg|ezafe`.
 * `یان`: plural after a vowel *or* 3pl enclitic — both readings are returned, ranked.
 * final `ە`/`یە`: copula, definite ezafe, demonstrative, vocative or short definite → feature `copula=3sg|ezafe.def|dem|voc|def.short`.
+* final `ێ`: indefinite, place or feminine vocative (`کچێ`) → two readings, `POSTP.E` first.
 * use `analyze()` (all readings) rather than `best()` for disambiguation in context.
 
 ## Ordinal numerals

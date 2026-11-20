@@ -30,7 +30,7 @@ from zimankit.skills_ckb.orthography import normalize, validate_word, spelling_v
 4. Keep ZWNJ only between two joining letters; convert ZWSP/thin/hair spaces/soft hyphen to ZWNJ first.
 5. Never 'fix' ر/ڕ or ل/ڵ inside a word without a lexicon: use spelling_variants() + frequency ratio.
 6. ڵڵ (ئەڵڵا) and ییی (سنەییی دڵسۆز) are valid and must be kept.
-7. Standard spelling writes û finally as وو (چوو), never starts a word with وو, and writes conjunction و separately. validate_word() reports these; structural_problems() does not, so the lexicon still recognises common non-standard forms.
+7. Standard spelling writes û finally as وو (چوو), never starts a word with وو, and writes conjunction و separately. validate_word() reports these; structural_problems() does not, so the lexicon still recognises common non-standard forms. Pass a lexicon as validate_word(word, known) to also flag سپیە → سپییە.
 8. Compound and preverb verbs: the standard splits them around a clitic (ڕای گەیاند, نانم کرد) and allows solid forms. Do not flag solid forms as errors. Generated paradigms are still solid; see docs/23-ckb-written-standard.md.
 
 Scraped text: HTML references for invisible characters (&zwnj;, &#8204;, &nbsp;) are decoded by the normaliser; other entities are kept.

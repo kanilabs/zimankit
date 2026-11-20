@@ -25,7 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "brand"
-REPO = "github.com/0xdolan/zimankit"
+REPO = "github.com/kanilabs/zimankit"
 
 # Sun of the flag of Kurdistan (Flag_of_Kurdistan.svg): centre (450, 300), outer radius 150.
 FLAG_SUN = (

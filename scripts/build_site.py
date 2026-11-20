@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the website (https://0xdolan.github.io/zimankit/) into _site/.
+"""Build the website (https://kanilabs.github.io/zimankit/) into _site/.
 
 Each page in site/pages/*.html is the <main> of one page. Its first line is a comment
 with the title and description:
@@ -26,8 +26,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "site"
 OUT = ROOT / "_site"
 BRAND = ROOT / "assets" / "brand"
-URL = "https://0xdolan.github.io/zimankit/"
-REPO = "https://github.com/0xdolan/zimankit"
+URL = "https://kanilabs.github.io/zimankit/"
+REPO = "https://github.com/kanilabs/zimankit"
 
 NAV = [("index.html", "Home"), ("playground.html", "Playground"), ("guide.html", "Guide"),
        ("index.html#install", "Install"), ("story.html", "Story"), ("brand.html", "Brand")]

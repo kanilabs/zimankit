@@ -27,7 +27,7 @@ from zimankit.skills_ckb.morphology import CkbAnalyzer
 1. Template: [PREP] STEM [DERIV] [CMP] [NUM/DEF] [ENCLITIC] [ADD] [POSTP] [ە/یە].
 2. Allomorph choice depends on whether the stem ends in a vowel *sound*: پیاو ends in /w/ → پیاوەکە; دەرگا ends in a vowel → دەرگاکە.
 3. Generate all segmentations, rank by lexicon membership, corpus frequency and affix reliability; do not trust the first regex match.
-4. Final ی is ambiguous (ezafe vs 3sg enclitic), and so is final ە/یە (copula, definite ezafe, demonstrative, vocative): keep the readings, and let the context decide.
+4. Final ی is ambiguous (ezafe vs 3sg enclitic), and so is final ە/یە (copula, definite ezafe, demonstrative, vocative): keep the readings, and let the context decide. Feminine vocative ێ (کچێ) and plural ینە (کچینە) are recognised with `vocative=f|pl`; the plural of an ە-final noun drops the ە (نامان = نامە+ان).
 5. Ordinals: numeral + ەم / یەم (شەشەم, سێیەم), attributive + ین (شەشەمین ساڵ) → ADJ, numtype=ord, lemma with ەم.
 6. Pass a SimpleLexicon built from output/ckb/lemmas_ckb.csv for production accuracy.
 

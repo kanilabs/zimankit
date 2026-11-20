@@ -58,7 +58,7 @@ The connection is set up once. On PyPI, go to **Account settings → Publishing 
 | field | value |
 |---|---|
 | PyPI project name | `zimankit` |
-| Owner | `0xdolan` |
+| Owner | `kanilabs` |
 | Repository name | `zimankit` |
 | Workflow name | `release.yml` |
 | Environment name | `pypi` |
