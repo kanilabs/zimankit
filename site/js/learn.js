@@ -1,7 +1,7 @@
 // "Learn more" links from a word or a tool to the tutorials and the documentation.
 // Titles come from the pages themselves (js/lessons.js, written by build_site.py, which also fails on a missing page).
 (function () {
-  const BASE = "https://github.com/0xdolan/zimankit/blob/main/docs/";
+  const BASE = "https://github.com/kanilabs/zimankit/blob/main/docs/";
   const LESSONS = {
     ckb: {
       alphabet: "tutorials/ckb/1-beginner/02-alphabet.md", vowels: "tutorials/ckb/1-beginner/03-vowels.md",

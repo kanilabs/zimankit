@@ -1,23 +1,23 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xdolan/zimankit/main/assets/brand/logo/png/zimankit-logo-256.png" width="160" alt="zimankit logo: the deq tree-of-life figure with the Kurdish sun at its heart">
+  <img src="https://raw.githubusercontent.com/kanilabs/zimankit/main/assets/brand/logo/png/zimankit-logo-256.png" width="160" alt="zimankit logo: the deq tree-of-life figure with the Kurdish sun at its heart">
 </p>
 
 <h1 align="center">zimankit · زمانکیت</h1>
 
 <p align="center">
-  <a href="https://0xdolan.github.io/zimankit/"><strong>Website</strong></a> ·
-  <a href="https://0xdolan.github.io/zimankit/playground.html"><strong>Try it in your browser</strong></a> ·
-  <a href="https://0xdolan.github.io/zimankit/guide.html">Guide</a> ·
-  <a href="https://github.com/0xdolan/zimankit/releases/latest">Download</a> ·
-  <a href="https://github.com/0xdolan/zimankit/blob/main/CHANGELOG.md">Changelog</a>
+  <a href="https://kanilabs.github.io/zimankit/"><strong>Website</strong></a> ·
+  <a href="https://kanilabs.github.io/zimankit/playground.html"><strong>Try it in your browser</strong></a> ·
+  <a href="https://kanilabs.github.io/zimankit/guide.html">Guide</a> ·
+  <a href="https://github.com/kanilabs/zimankit/releases/latest">Download</a> ·
+  <a href="https://github.com/kanilabs/zimankit/blob/main/CHANGELOG.md">Changelog</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/0xdolan/zimankit/actions/workflows/ci.yml"><img src="https://github.com/0xdolan/zimankit/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/0xdolan/zimankit/releases/latest"><img src="https://img.shields.io/github/v/release/0xdolan/zimankit?color=FEBD11&amp;labelColor=22332A" alt="latest release"></a>
+  <a href="https://github.com/kanilabs/zimankit/actions/workflows/ci.yml"><img src="https://github.com/kanilabs/zimankit/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/kanilabs/zimankit/releases/latest"><img src="https://img.shields.io/github/v/release/kanilabs/zimankit?color=FEBD11&amp;labelColor=22332A" alt="latest release"></a>
   <a href="https://pypi.org/project/zimankit/"><img src="https://img.shields.io/pypi/v/zimankit?color=FEBD11&amp;labelColor=22332A" alt="PyPI version"></a>
   <img src="https://img.shields.io/badge/python-3.11%2B-22332A" alt="Python 3.11+">
-  <a href="https://github.com/0xdolan/zimankit/blob/main/LICENSE"><img src="https://img.shields.io/badge/licence-GPL--3.0--or--later-278E43" alt="GPL-3.0-or-later"></a>
+  <a href="https://github.com/kanilabs/zimankit/blob/main/LICENSE"><img src="https://img.shields.io/badge/licence-GPL--3.0--or--later-278E43" alt="GPL-3.0-or-later"></a>
 </p>
 
 **Kurdish language skills and wordlist builder** for Central Kurdish (Sorani, `ckb`, Arabic script) and Northern Kurdish (Kurmanji, `kmr`, Hawar Latin script).
@@ -33,7 +33,7 @@
 | Quality | 120+ tests incl. the ground-truth matrix and the tutorial drift check · IPA agrees 96.5 % (ckb) / 97.8 % (kmr) with reference transcriptions in the data |
 | Dependencies | standard library only for the skills; `mdict-utils`, `libzim` for data ingestion |
 
-<p align="center"><a href="https://0xdolan.github.io/zimankit/playground.html"><img src="https://raw.githubusercontent.com/0xdolan/zimankit/main/assets/brand/screenshots/website-sentence-word.png" width="820" alt="the zimankit playground: a Kurmanji sentence drawn as coloured arrows between its words, with one word explained"></a></p>
+<p align="center"><a href="https://kanilabs.github.io/zimankit/playground.html"><img src="https://raw.githubusercontent.com/kanilabs/zimankit/main/assets/brand/screenshots/website-sentence-word.png" width="820" alt="the zimankit playground: a Kurmanji sentence drawn as coloured arrows between its words, with one word explained"></a></p>
 
 ## Install
 
@@ -43,13 +43,13 @@ zimankit needs Python 3.11 or newer and has no dependencies.
 pip install zimankit
 ```
 
-On Debian, Ubuntu or Kali, the [latest release](https://github.com/0xdolan/zimankit/releases/latest) also has a package:
+On Debian, Ubuntu or Kali, the [latest release](https://github.com/kanilabs/zimankit/releases/latest) also has a package:
 
 ```bash
 sudo apt install ./python3-zimankit_*_all.deb
 ```
 
-The release also has the full source as `.zip` and `.tar.gz`, and `SHA256SUMS`. Optional extras: `pip install "zimankit[data]"` reads `.mdx` and `.zim` files, and `pip install "zimankit[kaggle]"` adds the Parquet export. The [guide](https://0xdolan.github.io/zimankit/guide.html) covers every command and the Python API.
+The release also has the full source as `.zip` and `.tar.gz`, and `SHA256SUMS`. Optional extras: `pip install "zimankit[data]"` reads `.mdx` and `.zim` files, and `pip install "zimankit[kaggle]"` adds the Parquet export. The [guide](https://kanilabs.github.io/zimankit/guide.html) covers every command and the Python API.
 
 ## Quick start
 
@@ -79,21 +79,21 @@ python run_pipeline.py --stages export
 
 ## Documentation
 
-Start at the **[documentation index](https://github.com/0xdolan/zimankit/blob/main/docs/00-index.md)**.
+Start at the **[documentation index](https://github.com/kanilabs/zimankit/blob/main/docs/00-index.md)**.
 
-**Learning Kurdish?** The **[tutorials](https://github.com/0xdolan/zimankit/blob/main/docs/tutorials/README.md)** are two complete courses, [Sorani](https://github.com/0xdolan/zimankit/blob/main/docs/tutorials/ckb/README.md) and [Kurmanji](https://github.com/0xdolan/zimankit/blob/main/docs/tutorials/kmr/README.md), with 23 lessons each from the alphabet to ergativity, tagged 🟢 beginner / 🟡 intermediate / 🔴 advanced. Every conjugation, declension, IPA and transliteration table in them is generated by zimankit (`python scripts/gen_tutorials.py`), and a test fails if a lesson drifts from the code.
+**Learning Kurdish?** The **[tutorials](https://github.com/kanilabs/zimankit/blob/main/docs/tutorials/README.md)** are two complete courses, [Sorani](https://github.com/kanilabs/zimankit/blob/main/docs/tutorials/ckb/README.md) and [Kurmanji](https://github.com/kanilabs/zimankit/blob/main/docs/tutorials/kmr/README.md), with 23 lessons each from the alphabet to ergativity, tagged 🟢 beginner / 🟡 intermediate / 🔴 advanced. Every conjugation, declension, IPA and transliteration table in them is generated by zimankit (`python scripts/gen_tutorials.py`), and a test fails if a lesson drifts from the code.
 
 | part | chapters |
 |---|---|
-| Foundations | [1 Overview](https://github.com/0xdolan/zimankit/blob/main/docs/01-overview.md) · [2 Getting started](https://github.com/0xdolan/zimankit/blob/main/docs/02-getting-started.md) · [3 Data ingestion](https://github.com/0xdolan/zimankit/blob/main/docs/03-data-ingestion.md) · [4 Unicode](https://github.com/0xdolan/zimankit/blob/main/docs/04-unicode-normalization.md) · [5 Language ID](https://github.com/0xdolan/zimankit/blob/main/docs/05-language-identification.md) · [6 Tokenization](https://github.com/0xdolan/zimankit/blob/main/docs/06-tokenization.md) |
-| Central Kurdish | [7 Orthography](https://github.com/0xdolan/zimankit/blob/main/docs/07-ckb-orthography.md) · [8 Phonology & IPA](https://github.com/0xdolan/zimankit/blob/main/docs/08-ckb-phonology-ipa.md) · [9 Morphology](https://github.com/0xdolan/zimankit/blob/main/docs/09-ckb-morphology.md) · [10 Verbs](https://github.com/0xdolan/zimankit/blob/main/docs/10-ckb-verbs.md) |
-| Northern Kurdish | [11 Orthography](https://github.com/0xdolan/zimankit/blob/main/docs/11-kmr-orthography.md) · [12 Phonology & IPA](https://github.com/0xdolan/zimankit/blob/main/docs/12-kmr-phonology-ipa.md) · [13 Morphology](https://github.com/0xdolan/zimankit/blob/main/docs/13-kmr-morphology.md) · [14 Verbs & ergativity](https://github.com/0xdolan/zimankit/blob/main/docs/14-kmr-verbs-ergativity.md) |
-| Cross-cutting | [15 Transliteration](https://github.com/0xdolan/zimankit/blob/main/docs/15-transliteration.md) · [16 Wordlist pipeline](https://github.com/0xdolan/zimankit/blob/main/docs/16-lexicon-pipeline.md) · [17 Regex cookbook](https://github.com/0xdolan/zimankit/blob/main/docs/17-regex-cookbook.md) · [18 Multi-language examples](https://github.com/0xdolan/zimankit/blob/main/docs/18-multi-language-examples.md) · [19 Testing](https://github.com/0xdolan/zimankit/blob/main/docs/19-testing.md) |
-| Reference | [20 Glossary](https://github.com/0xdolan/zimankit/blob/main/docs/20-glossary.md) · [21 References](https://github.com/0xdolan/zimankit/blob/main/docs/21-references.md) |
-| Sentences | [22 Sentence structure](https://github.com/0xdolan/zimankit/blob/main/docs/22-sentence-structure.md) |
-| Written standard | [23 The Central Kurdish written standard](https://github.com/0xdolan/zimankit/blob/main/docs/23-ckb-written-standard.md) |
+| Foundations | [1 Overview](https://github.com/kanilabs/zimankit/blob/main/docs/01-overview.md) · [2 Getting started](https://github.com/kanilabs/zimankit/blob/main/docs/02-getting-started.md) · [3 Data ingestion](https://github.com/kanilabs/zimankit/blob/main/docs/03-data-ingestion.md) · [4 Unicode](https://github.com/kanilabs/zimankit/blob/main/docs/04-unicode-normalization.md) · [5 Language ID](https://github.com/kanilabs/zimankit/blob/main/docs/05-language-identification.md) · [6 Tokenization](https://github.com/kanilabs/zimankit/blob/main/docs/06-tokenization.md) |
+| Central Kurdish | [7 Orthography](https://github.com/kanilabs/zimankit/blob/main/docs/07-ckb-orthography.md) · [8 Phonology & IPA](https://github.com/kanilabs/zimankit/blob/main/docs/08-ckb-phonology-ipa.md) · [9 Morphology](https://github.com/kanilabs/zimankit/blob/main/docs/09-ckb-morphology.md) · [10 Verbs](https://github.com/kanilabs/zimankit/blob/main/docs/10-ckb-verbs.md) |
+| Northern Kurdish | [11 Orthography](https://github.com/kanilabs/zimankit/blob/main/docs/11-kmr-orthography.md) · [12 Phonology & IPA](https://github.com/kanilabs/zimankit/blob/main/docs/12-kmr-phonology-ipa.md) · [13 Morphology](https://github.com/kanilabs/zimankit/blob/main/docs/13-kmr-morphology.md) · [14 Verbs & ergativity](https://github.com/kanilabs/zimankit/blob/main/docs/14-kmr-verbs-ergativity.md) |
+| Cross-cutting | [15 Transliteration](https://github.com/kanilabs/zimankit/blob/main/docs/15-transliteration.md) · [16 Wordlist pipeline](https://github.com/kanilabs/zimankit/blob/main/docs/16-lexicon-pipeline.md) · [17 Regex cookbook](https://github.com/kanilabs/zimankit/blob/main/docs/17-regex-cookbook.md) · [18 Multi-language examples](https://github.com/kanilabs/zimankit/blob/main/docs/18-multi-language-examples.md) · [19 Testing](https://github.com/kanilabs/zimankit/blob/main/docs/19-testing.md) |
+| Reference | [20 Glossary](https://github.com/kanilabs/zimankit/blob/main/docs/20-glossary.md) · [21 References](https://github.com/kanilabs/zimankit/blob/main/docs/21-references.md) |
+| Sentences | [22 Sentence structure](https://github.com/kanilabs/zimankit/blob/main/docs/22-sentence-structure.md) |
+| Written standard | [23 The Central Kurdish written standard](https://github.com/kanilabs/zimankit/blob/main/docs/23-ckb-written-standard.md) |
 
-Also: [agent skills](https://github.com/0xdolan/zimankit/blob/main/skills/README.md) · [cross-language examples](https://github.com/0xdolan/zimankit/blob/main/examples/README.md) · [engineering brief](https://github.com/0xdolan/zimankit/blob/main/PROMPT.md) · [contributing and releases](https://github.com/0xdolan/zimankit/blob/main/CONTRIBUTING.md) · [changelog](https://github.com/0xdolan/zimankit/blob/main/CHANGELOG.md) · [website source](https://github.com/0xdolan/zimankit/tree/main/site/).
+Also: [agent skills](https://github.com/kanilabs/zimankit/blob/main/skills/README.md) · [cross-language examples](https://github.com/kanilabs/zimankit/blob/main/examples/README.md) · [engineering brief](https://github.com/kanilabs/zimankit/blob/main/PROMPT.md) · [contributing and releases](https://github.com/kanilabs/zimankit/blob/main/CONTRIBUTING.md) · [changelog](https://github.com/kanilabs/zimankit/blob/main/CHANGELOG.md) · [website source](https://github.com/kanilabs/zimankit/tree/main/site/).
 
 ## Layout
 
@@ -122,7 +122,7 @@ zimankit/
 
 ## Output schema
 
-`grapheme, lemma, pos, ipa, morph_meta, translit, frequency, sources, confidence` — see [chapter 16](https://github.com/0xdolan/zimankit/blob/main/docs/16-lexicon-pipeline.md#csv-schema).
+`grapheme, lemma, pos, ipa, morph_meta, translit, frequency, sources, confidence` — see [chapter 16](https://github.com/kanilabs/zimankit/blob/main/docs/16-lexicon-pipeline.md#csv-schema).
 
 ```
 کتێبەکەم,کتێب,NOUN,k(ɯ)teːbækæm,"{""definite"":""def"",""enclitic"":""1sg"",""number"":""sg"",""seg"":""کتێب+ەکە+م""}",kitêbekem,137,"encyclopedia,news,web",0.31
@@ -131,14 +131,14 @@ jinekê,jin,NOUN,ʒɪnɛkeː,"{""case"":""obl"",""definite"":""ind"",""gender"":
 
 ## The logo
 
-<p align="center"><img src="https://raw.githubusercontent.com/0xdolan/zimankit/main/assets/brand/story/zimankit-logo-construction.png" width="720" alt="deq figure + the sun of the flag of Kurdistan = the zimankit logo"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/kanilabs/zimankit/main/assets/brand/story/zimankit-logo-construction.png" width="720" alt="deq figure + the sun of the flag of Kurdistan = the zimankit logo"></p>
 
 The logo is a sign of **deq**, the traditional hand-poked tattoo of Kurdish women: the figure read as the **tree of life**, a symbol of fertility, growth and life force. Its circle stands for the cycle of life, its line and V shapes for a sprout or a tree, and its dots for protection against the evil eye. At its heart shines **Roj**, the 21-rayed sun of the flag of Kurdistan; *roj* / *ڕۆژ* means both "sun" and "day". Together they stand for Kurdish (*ziman*, "language") as a living language.
 
-The full story, with the history and meaning of deq, sources, colours, usage, and every logo, icon, social, ad and print file, is in **[assets/brand/](https://github.com/0xdolan/zimankit/blob/main/assets/brand/README.md)**.
+The full story, with the history and meaning of deq, sources, colours, usage, and every logo, icon, social, ad and print file, is in **[assets/brand/](https://github.com/kanilabs/zimankit/blob/main/assets/brand/README.md)**.
 
 ## Licence
 
-The code is licensed under the [GNU General Public License v3.0 or later](https://github.com/0xdolan/zimankit/blob/main/LICENSE).
+The code is licensed under the [GNU General Public License v3.0 or later](https://github.com/kanilabs/zimankit/blob/main/LICENSE).
 
 Generated data is licensed separately. The large generated files under `output/` are git-ignored (regenerate them with the pipeline; 300-row samples are kept). Wordlists derived from openly licensed sources may carry share-alike obligations when redistributed — check the licences of the data you configure. The published Kaggle dataset and the sample CSVs in `output/` are CC BY-SA 4.0.
