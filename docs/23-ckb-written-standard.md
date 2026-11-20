@@ -4,7 +4,7 @@
 
 # The Central Kurdish written standard
 
-**On this page:** [Letters and sounds](#letters-and-sounds) · [Ezafe and the three ی](#ezafe-and-the-three-ی) · [Verbs: the third person](#verbs-the-third-person) · [Word spacing](#word-spacing) · [Agent clitic placement](#agent-clitic-placement) · [Where the sources disagree](#where-the-sources-disagree) · [Not implemented yet](#not-implemented-yet)
+**On this page:** [Letters and sounds](#letters-and-sounds) · [Ezafe and the three ی](#ezafe-and-the-three-ی) · [Verbs: the third person](#verbs-the-third-person) · [Word spacing](#word-spacing) · [Agent clitic placement](#agent-clitic-placement) · [Punctuation](#punctuation) · [Where the sources disagree](#where-the-sources-disagree) · [Not implemented yet](#not-implemented-yet)
 
 This chapter records the Central Kurdish spelling and grammar rules that zimankit is checked against, how much of each is implemented, and where the authorities disagree. The sources are listed in [References](21-references.md). Coverage of them is uneven: the spelling standard and the verb chapters were read closely, while several school books and handouts were read only in part.
 
@@ -28,6 +28,8 @@ Two ideas run through it:
 | plain î is one `ی` | `تیر`, `کوردی` | `تییر`, `کوردیی` as the bare word | not flagged; needs the lexicon |
 | `یی` for î after a vowel | `کۆتایی`, `سنەیی` | `کۆتای` | generated correctly by the morphology |
 | `یە` is written solid | `سپییە`, `چییە`, `نییە`, `مامۆستایە` | `سپی یە`, `سپی‌یە` | ZWNJ form normalised |
+| a ی-final word keeps its ی before `یە` | `سپییە`, `کوردییە` | `سپیە`, `کوردیە` | `validate_word(word, known)` with a lexicon; the builder lists `سپیە` as a variant when both spellings occur |
+| ی as y is not doubled | `ژیان` | `ژییان` | `validate_word` |
 | the `ت` stays | `دەستەسڕ`, `ماستاوچی` | `دەسەسڕ` | not flagged |
 | Latin values | `wişe`, `mirdin`, `stran`, `mindall` | | `to_latin` |
 
@@ -65,6 +67,7 @@ The passive adds `د` after a root in `ر` or `ڕ`: `دەخوێنرێت`, but `�
 | compound infinitives are solid | `نانکردن`, `شەڕکردن`, `پێکهێنان` | `نان کردن` | not checked |
 | conjugated compounds split | `نان دەکەم`, `نانم کرد`, `نانم کردووە` | `نانمکرد` (see below) | read when split; pages show it split |
 | preverb, present is solid | `هەڵدەگرم` | `هەڵ دەگرم` | generated |
+| `دەر`, `پێک`, `تێک`, `ڕێک` are separate in every tense | `دەر دەچم`, `دەر چووم`, `پێک دێن`, `تێک دەچم` | `دەردەچم` (see below) | generated; solid accepted |
 | preverb, split around a clitic | `هەڵم گرت`, `ڕای گەیاند` | `ڕای‌گەیاند` | read when split; pages show it split |
 | four parts | `پێ لێ هەڵگرتن`, `پێی لێ هەڵگرت` | | not implemented |
 | infinitive or finite verb | `ڕێککەوتن` (noun), `ڕێک کەوتن` (verb) | | not checked |
@@ -83,6 +86,8 @@ The passive adds `د` after a root in `ر` or `ڕ`: `دەخوێنرێت`, but `�
 
 Other preferred spellings: `بەرانبەر` (not `بەرامبەر`), `لێبووردن`, `مشتومڕ`, `کشتوکاڵ`, `ئەلفبێ`, `پێم وایە`, `دەست خۆش`, `تەمەندرێژ`, and `دە-` in preference to `ئە-` (`دەڕۆم`).
 
+From Hashemi's ڕێنووس pages, not checked by zimankit: split `لانی کەم`, `هەموو جارێ`, `هەر وەک`, `شەو شاد`, `وام زانی`; solid `بەپێی`, `بەدوای`, `دڵناسک`, and the nouns `لەدایکبوون`, `چوونەژوورەوە`; `لێوئاڵ` keeps its `ئ` because the stress falls there; `هاتوچۆ` is preferred and `هاتووچۆ` accepted; `لەسەر` is solid, and split only when `سەر` means "head" (`بەردێکی لە سەری دا`).
+
 ## Agent clitic placement
 
 The grade 12 handout and ڕێزمانی وێنەیی agree on this rule:
@@ -93,18 +98,33 @@ The grade 12 handout and ڕێزمانی وێنەیی agree on this rule:
 
 zimankit follows all three rules. It still recognises the older shapes `هەڵنەمگرت`, `هەڵدەمگرت` and `هەڵگرتوومە` as a variant.
 
+## Punctuation
+
+From Hashemi's punctuation page:
+
+- A mark attaches to the word before it and is followed by a space: `بەڵێ، دێم.`
+- Use the Arabic-script marks `،` `؛` `؟`. `normalize` maps `,` `;` `?` to them.
+- Do not stack a question mark and a full stop (`؟.`). Headings take no full stop.
+- Put a comma after a vocative, after `بەڵێ`/`نەخێر` and after an interjection: `کچینە، هەوڵ بدەن`, `ئازاد، کتێبەکە داخە.`
+- Put a comma before `یان` when it joins clauses, but not before the last `و` of a list.
+- An ellipsis is exactly three dots.
+
+zimankit checks none of these except the mark mapping.
+
 ## Where the sources disagree
 
 These are open, so zimankit should not change them silently. The interim choice is in the last column.
 
 | point | positions | interim |
 |---|---|---|
-| preverb + clitic | split in the Academy pamphlets; solid allowed according to Hashemi's FAQ, which is the only evidence for that allowance; both printed in school material | accept both, prefer split |
+| preverb + clitic | split in the Academy pamphlets (2010: `هەڵم گرت`, `پێم گەیشت`, `وەرم گرت`); solid allowed according to Hashemi's FAQ, which is the only evidence for that allowance; both printed in school material | accept both, prefer split |
+| compound preverb in the infinitive | solid in Hashemi (`پێکهاتن`); split in the 2010 pamphlet (`لێک دابڕان`, `پێکەوە هاتن`) | keep the infinitive solid |
 | conjugated compounds, present | split in Hashemi and zkurd.org; solid in the grade 12 handout | as above |
 | `تێکچوو` | split in zkurd.org; solid in the 2010 pamphlet | prefer split |
+| `دەر` in finite forms | split in Hashemi's grammar (`دەر دەچێت`, `دەر چووم`); solid `دەردەچم` is common in print | generate split, accept solid |
 | `ئەمجارە` | `ئەم جارە` in Hashemi; solid in the 2004 pamphlet | do not flag |
-| `حەوت سەد`, `ئەلفبێ` | `حەوتسەد` in the 2010 pamphlet; `ئەلفوبێ` in the 2004 pamphlet | prefer Hashemi, warn only |
-| clitic after `نە`/`دە` on a simple verb | spaced `نەم هێنا`, `دەمان سڕی` in school material; also solid `دەمانخوێند` | keep solid |
+| `حەوت سەد`, `ئەلفبێ` | `حەوتسەد` in the 2010 pamphlet; `ئەلفوبێ` in the 2004 pamphlet | prefer Hashemi, warn only: `validate_word` names `حەوت سەد` and `ئەلفبێ`; the spaced `ئەلف و بێ` is not checked |
+| clitic after `نە`/`دە` on a simple verb | spaced `نەم هێنا`, `دەمان سڕی` in school material; solid `دەمانخوێند`, and solid in the 2010 pamphlet (`دەمگرت`, `دەمانگرت`, `دەیانگرت`) | keep solid |
 | plural of ە-final nouns | `قوتابخانان`, `پەنجەران`, `دەرگەیان` | recognise, not generated |
 | definite after a vowel | by syllable count, both `چراکە` and `چرایەکە`, or by final letter | by final letter |
 | negative past subjunctive with a clitic | not printed in the sources checked; `نەمخواردبا` follows the clitic rule, `نەخواردبام` is the alternative | generate the first, accept both |
@@ -114,7 +134,7 @@ These are open, so zimankit should not change them silently. The interim choice 
 | `چوون` imperative | `بچۆ` in the sources; `بڕۆ` is also used | show `بچۆ`, accept both |
 | passive after ر | `د` inserted, or `سپێررا`, `برا` regionally | keep `د` |
 | `ماسییەکە` or `ماسێکە` | | generate the first, accept both |
-| vocative | `ە` masculine, `ێ` feminine, `ینە` plural, or `ە` for both | not implemented |
+| vocative | `ە` masculine, `ێ` feminine (`کچێ`, ڕێنووس و خاڵبەندی), `ینە` plural (`کچینە`, Hashemi's punctuation page), or `ە` for both | recognise all three, not generated |
 | number + plural noun, `پیاوەکە هاتن` | common usage; no explicit rule found | `پیاوەکە هاتن` is a usage note, not an error |
 | `هەبوون` | only `هەم`, `هەیە`, `هەبوو`, `دەبێت`, `دەبوو`, `دەبووایە` are in the pages read; the rest of the paradigm has no source | not added as a core verb |
 | terminology | `هاوەڵناو`/`ئاوەڵناو`, `جێناو`/`ڕاناو`, `کار`/`کردار` | list both |

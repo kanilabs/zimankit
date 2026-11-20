@@ -23,7 +23,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from typing import Literal
+from typing import Container, Literal
 
 from ..shared_utils.normalizer import NormalizeOptions, clean_zwnj, normalize_text
 from ..shared_utils.unicode_tables import (
@@ -122,6 +122,10 @@ _ILLEGAL_SEQUENCES = (
 STANDARD_OVERRIDES = {
     "وەکو": "وەکوو", "تاکو": "تاکوو", "بەرامبەر": "بەرانبەر", "کەرکوک": "کەرکووک", "نیە": "نییە", "چیە": "چییە",
     "ڕۆژئاوا": "ڕۆژاوا", "خۆرئاوا": "خۆراوا", "ماڵئاوایی": "ماڵاوایی",
+    "ژییان": "ژیان",  # the ی is y: ژیان (Diyako's ڕێنووس)
+    "ئەلفوبێ": "ئەلفبێ",  # the 2004 pamphlet writes ئەلفوبێ; Diyako and doc 23 prefer ئەلفبێ (warn only)
+    # hundreds are written apart (Diyako); the 2010 pamphlet writes حەوتسەد solid (warn only)
+    **{n + "سەد": n + " سەد" for n in ("دوو", "سێ", "چوار", "پێنج", "شەش", "حەوت", "هەشت", "نۆ")},
 }
 _FINAL_U_OK = frozenset({"تو", "کو", "وود", "ئەبو"})  # short and foreign words with a written single و
 
@@ -154,8 +158,22 @@ def structural_problems(word: str) -> list[str]:
     return problems
 
 
-def validate_word(word: str) -> list[str]:
-    """Return a list of problems ('' list = orthographically valid, standard word)."""
+def single_y_copula(word: str, known: Container[str]) -> str | None:
+    """سپیە -> سپییە: a known ی-final word keeps its ی before the copula یە (Diyako's ڕێنووس, 2010 pamphlet).
+
+    Only after a consonant + ی (not مامۆستایە, قسەیە), and only when the word without ە is in *known*,
+    so a loanword such as سوریە is not touched unless سوری is listed.
+    """
+    if len(word) >= 4 and word.endswith("یە") and word[-3] not in "اەۆێیو" and word[:-1] in known:
+        return word[:-1] + "یە"
+    return None
+
+
+def validate_word(word: str, known: Container[str] | None = None) -> list[str]:
+    """Return a list of problems ('' list = orthographically valid, standard word).
+
+    With *known* (a lexicon), also flags a missing ی before the copula: سپیە -> سپییە.
+    """
     problems = structural_problems(word)
     if not word:
         return problems
@@ -171,6 +189,8 @@ def validate_word(word: str) -> list[str]:
         problems.append("more than three ی")
     if word in STANDARD_OVERRIDES:
         problems.append(f"the standard spelling is {STANDARD_OVERRIDES[word]}")
+    elif known is not None and word not in known and (std := single_y_copula(word, known)):
+        problems.append(f"the standard spelling is {std}")
     return problems
 
 

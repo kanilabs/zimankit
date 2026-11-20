@@ -17,12 +17,12 @@
 
 | person | pronoun | Present | Present negative |
 |---|---|---|---|
-| 1sg | من | **دەردەکەم**<br><sub>derdekem</sub><br><sub>/dæɾdækæm/</sub> | **دەرناکەم**<br><sub>dernakem</sub><br><sub>/dæɾnaːkæm/</sub> |
-| 2sg | تۆ | **دەردەکەیت**<br><sub>derdekeyt</sub><br><sub>/dæɾdækæjt/</sub> | **دەرناکەیت**<br><sub>dernakeyt</sub><br><sub>/dæɾnaːkæjt/</sub> |
-| 3sg | ئەو | **دەردەکات**<br><sub>derdekat</sub><br><sub>/dæɾdækaːt/</sub> | **دەرناکات**<br><sub>dernakat</sub><br><sub>/dæɾnaːkaːt/</sub> |
-| 1pl | ئێمە | **دەردەکەین**<br><sub>derdekeyn</sub><br><sub>/dæɾdækæjn/</sub> | **دەرناکەین**<br><sub>dernakeyn</sub><br><sub>/dæɾnaːkæjn/</sub> |
-| 2pl | ئێوە | **دەردەکەن**<br><sub>derdeken</sub><br><sub>/dæɾdækæn/</sub> | **دەرناکەن**<br><sub>dernaken</sub><br><sub>/dæɾnaːkæn/</sub> |
-| 3pl | ئەوان | **دەردەکەن**<br><sub>derdeken</sub><br><sub>/dæɾdækæn/</sub> | **دەرناکەن**<br><sub>dernaken</sub><br><sub>/dæɾnaːkæn/</sub> |
+| 1sg | من | **دەر دەکەم**<br><sub>also دەردەکەم</sub><br><sub>der dekem</sub><br><sub>/dæɾ dækæm/</sub> | **دەر ناکەم**<br><sub>also دەرناکەم</sub><br><sub>der nakem</sub><br><sub>/dæɾ naːkæm/</sub> |
+| 2sg | تۆ | **دەر دەکەیت**<br><sub>also دەردەکەیت</sub><br><sub>der dekeyt</sub><br><sub>/dæɾ dækæjt/</sub> | **دەر ناکەیت**<br><sub>also دەرناکەیت</sub><br><sub>der nakeyt</sub><br><sub>/dæɾ naːkæjt/</sub> |
+| 3sg | ئەو | **دەر دەکات**<br><sub>also دەردەکات</sub><br><sub>der dekat</sub><br><sub>/dæɾ dækaːt/</sub> | **دەر ناکات**<br><sub>also دەرناکات</sub><br><sub>der nakat</sub><br><sub>/dæɾ naːkaːt/</sub> |
+| 1pl | ئێمە | **دەر دەکەین**<br><sub>also دەردەکەین</sub><br><sub>der dekeyn</sub><br><sub>/dæɾ dækæjn/</sub> | **دەر ناکەین**<br><sub>also دەرناکەین</sub><br><sub>der nakeyn</sub><br><sub>/dæɾ naːkæjn/</sub> |
+| 2pl | ئێوە | **دەر دەکەن**<br><sub>also دەردەکەن</sub><br><sub>der deken</sub><br><sub>/dæɾ dækæn/</sub> | **دەر ناکەن**<br><sub>also دەرناکەن</sub><br><sub>der naken</sub><br><sub>/dæɾ naːkæn/</sub> |
+| 3pl | ئەوان | **دەر دەکەن**<br><sub>also دەردەکەن</sub><br><sub>der deken</sub><br><sub>/dæɾ dækæn/</sub> | **دەر ناکەن**<br><sub>also دەرناکەن</sub><br><sub>der naken</sub><br><sub>/dæɾ naːkæn/</sub> |
 
 ## Subjunctive
 
@@ -30,12 +30,12 @@
 
 | person | pronoun | Subjunctive | Subjunctive negative |
 |---|---|---|---|
-| 1sg | من | **دەربکەم**<br><sub>derbikem</sub><br><sub>/dæɾb(ɯ)kæm/</sub> | **دەرنەکەم**<br><sub>dernekem</sub><br><sub>/dæɾnækæm/</sub> |
-| 2sg | تۆ | **دەربکەیت**<br><sub>derbikeyt</sub><br><sub>/dæɾb(ɯ)kæjt/</sub> | **دەرنەکەیت**<br><sub>dernekeyt</sub><br><sub>/dæɾnækæjt/</sub> |
-| 3sg | ئەو | **دەربکات**<br><sub>derbikat</sub><br><sub>/dæɾb(ɯ)kaːt/</sub> | **دەرنەکات**<br><sub>dernekat</sub><br><sub>/dæɾnækaːt/</sub> |
-| 1pl | ئێمە | **دەربکەین**<br><sub>derbikeyn</sub><br><sub>/dæɾb(ɯ)kæjn/</sub> | **دەرنەکەین**<br><sub>dernekeyn</sub><br><sub>/dæɾnækæjn/</sub> |
-| 2pl | ئێوە | **دەربکەن**<br><sub>derbiken</sub><br><sub>/dæɾb(ɯ)kæn/</sub> | **دەرنەکەن**<br><sub>derneken</sub><br><sub>/dæɾnækæn/</sub> |
-| 3pl | ئەوان | **دەربکەن**<br><sub>derbiken</sub><br><sub>/dæɾb(ɯ)kæn/</sub> | **دەرنەکەن**<br><sub>derneken</sub><br><sub>/dæɾnækæn/</sub> |
+| 1sg | من | **دەر بکەم**<br><sub>also دەربکەم</sub><br><sub>der bikem</sub><br><sub>/dæɾ b(ɯ)kæm/</sub> | **دەر نەکەم**<br><sub>also دەرنەکەم</sub><br><sub>der nekem</sub><br><sub>/dæɾ nækæm/</sub> |
+| 2sg | تۆ | **دەر بکەیت**<br><sub>also دەربکەیت</sub><br><sub>der bikeyt</sub><br><sub>/dæɾ b(ɯ)kæjt/</sub> | **دەر نەکەیت**<br><sub>also دەرنەکەیت</sub><br><sub>der nekeyt</sub><br><sub>/dæɾ nækæjt/</sub> |
+| 3sg | ئەو | **دەر بکات**<br><sub>also دەربکات</sub><br><sub>der bikat</sub><br><sub>/dæɾ b(ɯ)kaːt/</sub> | **دەر نەکات**<br><sub>also دەرنەکات</sub><br><sub>der nekat</sub><br><sub>/dæɾ nækaːt/</sub> |
+| 1pl | ئێمە | **دەر بکەین**<br><sub>also دەربکەین</sub><br><sub>der bikeyn</sub><br><sub>/dæɾ b(ɯ)kæjn/</sub> | **دەر نەکەین**<br><sub>also دەرنەکەین</sub><br><sub>der nekeyn</sub><br><sub>/dæɾ nækæjn/</sub> |
+| 2pl | ئێوە | **دەر بکەن**<br><sub>also دەربکەن</sub><br><sub>der biken</sub><br><sub>/dæɾ b(ɯ)kæn/</sub> | **دەر نەکەن**<br><sub>also دەرنەکەن</sub><br><sub>der neken</sub><br><sub>/dæɾ nækæn/</sub> |
+| 3pl | ئەوان | **دەر بکەن**<br><sub>also دەربکەن</sub><br><sub>der biken</sub><br><sub>/dæɾ b(ɯ)kæn/</sub> | **دەر نەکەن**<br><sub>also دەرنەکەن</sub><br><sub>der neken</sub><br><sub>/dæɾ nækæn/</sub> |
 
 ## Simple past
 
@@ -114,12 +114,12 @@
 
 | person | pronoun | Passive present | Passive present negative | Passive subjunctive | Passive subjunctive negative |
 |---|---|---|---|---|---|
-| 1sg | من | **دەردەکرێم**<br><sub>derdekrêm</sub><br><sub>/dæɾdækɾeːm/</sub> | **دەرناکرێم**<br><sub>dernakrêm</sub><br><sub>/dæɾnaːkɾeːm/</sub> | **دەربکرێم**<br><sub>derbikrêm</sub><br><sub>/dæɾb(ɯ)kɾeːm/</sub> | **دەرنەکرێم**<br><sub>dernekrêm</sub><br><sub>/dæɾnækɾeːm/</sub> |
-| 2sg | تۆ | **دەردەکرێیت**<br><sub>derdekrêyt</sub><br><sub>/dæɾdækɾeːjt/</sub> | **دەرناکرێیت**<br><sub>dernakrêyt</sub><br><sub>/dæɾnaːkɾeːjt/</sub> | **دەربکرێیت**<br><sub>derbikrêyt</sub><br><sub>/dæɾb(ɯ)kɾeːjt/</sub> | **دەرنەکرێیت**<br><sub>dernekrêyt</sub><br><sub>/dæɾnækɾeːjt/</sub> |
-| 3sg | ئەو | **دەردەکرێت**<br><sub>derdekrêt</sub><br><sub>/dæɾdækɾeːt/</sub> | **دەرناکرێت**<br><sub>dernakrêt</sub><br><sub>/dæɾnaːkɾeːt/</sub> | **دەربکرێت**<br><sub>derbikrêt</sub><br><sub>/dæɾb(ɯ)kɾeːt/</sub> | **دەرنەکرێت**<br><sub>dernekrêt</sub><br><sub>/dæɾnækɾeːt/</sub> |
-| 1pl | ئێمە | **دەردەکرێین**<br><sub>derdekrêyn</sub><br><sub>/dæɾdækɾeːjn/</sub> | **دەرناکرێین**<br><sub>dernakrêyn</sub><br><sub>/dæɾnaːkɾeːjn/</sub> | **دەربکرێین**<br><sub>derbikrêyn</sub><br><sub>/dæɾb(ɯ)kɾeːjn/</sub> | **دەرنەکرێین**<br><sub>dernekrêyn</sub><br><sub>/dæɾnækɾeːjn/</sub> |
-| 2pl | ئێوە | **دەردەکرێن**<br><sub>derdekrên</sub><br><sub>/dæɾdækɾeːn/</sub> | **دەرناکرێن**<br><sub>dernakrên</sub><br><sub>/dæɾnaːkɾeːn/</sub> | **دەربکرێن**<br><sub>derbikrên</sub><br><sub>/dæɾb(ɯ)kɾeːn/</sub> | **دەرنەکرێن**<br><sub>dernekrên</sub><br><sub>/dæɾnækɾeːn/</sub> |
-| 3pl | ئەوان | **دەردەکرێن**<br><sub>derdekrên</sub><br><sub>/dæɾdækɾeːn/</sub> | **دەرناکرێن**<br><sub>dernakrên</sub><br><sub>/dæɾnaːkɾeːn/</sub> | **دەربکرێن**<br><sub>derbikrên</sub><br><sub>/dæɾb(ɯ)kɾeːn/</sub> | **دەرنەکرێن**<br><sub>dernekrên</sub><br><sub>/dæɾnækɾeːn/</sub> |
+| 1sg | من | **دەر دەکرێم**<br><sub>also دەردەکرێم</sub><br><sub>der dekrêm</sub><br><sub>/dæɾ dækɾeːm/</sub> | **دەر ناکرێم**<br><sub>also دەرناکرێم</sub><br><sub>der nakrêm</sub><br><sub>/dæɾ naːkɾeːm/</sub> | **دەر بکرێم**<br><sub>also دەربکرێم</sub><br><sub>der bikrêm</sub><br><sub>/dæɾ b(ɯ)kɾeːm/</sub> | **دەر نەکرێم**<br><sub>also دەرنەکرێم</sub><br><sub>der nekrêm</sub><br><sub>/dæɾ nækɾeːm/</sub> |
+| 2sg | تۆ | **دەر دەکرێیت**<br><sub>also دەردەکرێیت</sub><br><sub>der dekrêyt</sub><br><sub>/dæɾ dækɾeːjt/</sub> | **دەر ناکرێیت**<br><sub>also دەرناکرێیت</sub><br><sub>der nakrêyt</sub><br><sub>/dæɾ naːkɾeːjt/</sub> | **دەر بکرێیت**<br><sub>also دەربکرێیت</sub><br><sub>der bikrêyt</sub><br><sub>/dæɾ b(ɯ)kɾeːjt/</sub> | **دەر نەکرێیت**<br><sub>also دەرنەکرێیت</sub><br><sub>der nekrêyt</sub><br><sub>/dæɾ nækɾeːjt/</sub> |
+| 3sg | ئەو | **دەر دەکرێت**<br><sub>also دەردەکرێت</sub><br><sub>der dekrêt</sub><br><sub>/dæɾ dækɾeːt/</sub> | **دەر ناکرێت**<br><sub>also دەرناکرێت</sub><br><sub>der nakrêt</sub><br><sub>/dæɾ naːkɾeːt/</sub> | **دەر بکرێت**<br><sub>also دەربکرێت</sub><br><sub>der bikrêt</sub><br><sub>/dæɾ b(ɯ)kɾeːt/</sub> | **دەر نەکرێت**<br><sub>also دەرنەکرێت</sub><br><sub>der nekrêt</sub><br><sub>/dæɾ nækɾeːt/</sub> |
+| 1pl | ئێمە | **دەر دەکرێین**<br><sub>also دەردەکرێین</sub><br><sub>der dekrêyn</sub><br><sub>/dæɾ dækɾeːjn/</sub> | **دەر ناکرێین**<br><sub>also دەرناکرێین</sub><br><sub>der nakrêyn</sub><br><sub>/dæɾ naːkɾeːjn/</sub> | **دەر بکرێین**<br><sub>also دەربکرێین</sub><br><sub>der bikrêyn</sub><br><sub>/dæɾ b(ɯ)kɾeːjn/</sub> | **دەر نەکرێین**<br><sub>also دەرنەکرێین</sub><br><sub>der nekrêyn</sub><br><sub>/dæɾ nækɾeːjn/</sub> |
+| 2pl | ئێوە | **دەر دەکرێن**<br><sub>also دەردەکرێن</sub><br><sub>der dekrên</sub><br><sub>/dæɾ dækɾeːn/</sub> | **دەر ناکرێن**<br><sub>also دەرناکرێن</sub><br><sub>der nakrên</sub><br><sub>/dæɾ naːkɾeːn/</sub> | **دەر بکرێن**<br><sub>also دەربکرێن</sub><br><sub>der bikrên</sub><br><sub>/dæɾ b(ɯ)kɾeːn/</sub> | **دەر نەکرێن**<br><sub>also دەرنەکرێن</sub><br><sub>der nekrên</sub><br><sub>/dæɾ nækɾeːn/</sub> |
+| 3pl | ئەوان | **دەر دەکرێن**<br><sub>also دەردەکرێن</sub><br><sub>der dekrên</sub><br><sub>/dæɾ dækɾeːn/</sub> | **دەر ناکرێن**<br><sub>also دەرناکرێن</sub><br><sub>der nakrên</sub><br><sub>/dæɾ naːkɾeːn/</sub> | **دەر بکرێن**<br><sub>also دەربکرێن</sub><br><sub>der bikrên</sub><br><sub>/dæɾ b(ɯ)kɾeːn/</sub> | **دەر نەکرێن**<br><sub>also دەرنەکرێن</sub><br><sub>der nekrên</sub><br><sub>/dæɾ nækɾeːn/</sub> |
 
 ## Passive: past
 
@@ -127,12 +127,12 @@
 
 | person | pronoun | Passive past | Passive past negative | Passive past progressive | Passive past progressive negative |
 |---|---|---|---|---|---|
-| 1sg | من | **دەرکردرام**<br><sub>derkiridram</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːm/</sub> | **دەرنەکرام**<br><sub>dernekram</sub><br><sub>/dæɾnækɾaːm/</sub> | **دەردەکرام**<br><sub>derdekram</sub><br><sub>/dæɾdækɾaːm/</sub> | **دەرنەدەکرام**<br><sub>dernedekram</sub><br><sub>/dæɾnædækɾaːm/</sub> |
-| 2sg | تۆ | **دەرکردرایت**<br><sub>derkiridrayt</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːjt/</sub> | **دەرنەکرایت**<br><sub>dernekrayt</sub><br><sub>/dæɾnækɾaːjt/</sub> | **دەردەکرایت**<br><sub>derdekrayt</sub><br><sub>/dæɾdækɾaːjt/</sub> | **دەرنەدەکرایت**<br><sub>dernedekrayt</sub><br><sub>/dæɾnædækɾaːjt/</sub> |
-| 3sg | ئەو | **دەرکردرا**<br><sub>derkiridra</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaː/</sub> | **دەرنەکرا**<br><sub>dernekra</sub><br><sub>/dæɾnækɾaː/</sub> | **دەردەکرا**<br><sub>derdekra</sub><br><sub>/dæɾdækɾaː/</sub> | **دەرنەدەکرا**<br><sub>dernedekra</sub><br><sub>/dæɾnædækɾaː/</sub> |
-| 1pl | ئێمە | **دەرکردراین**<br><sub>derkiridrayn</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːjn/</sub> | **دەرنەکراین**<br><sub>dernekrayn</sub><br><sub>/dæɾnækɾaːjn/</sub> | **دەردەکراین**<br><sub>derdekrayn</sub><br><sub>/dæɾdækɾaːjn/</sub> | **دەرنەدەکراین**<br><sub>dernedekrayn</sub><br><sub>/dæɾnædækɾaːjn/</sub> |
-| 2pl | ئێوە | **دەرکردران**<br><sub>derkiridran</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːn/</sub> | **دەرنەکران**<br><sub>dernekran</sub><br><sub>/dæɾnækɾaːn/</sub> | **دەردەکران**<br><sub>derdekran</sub><br><sub>/dæɾdækɾaːn/</sub> | **دەرنەدەکران**<br><sub>dernedekran</sub><br><sub>/dæɾnædækɾaːn/</sub> |
-| 3pl | ئەوان | **دەرکردران**<br><sub>derkiridran</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːn/</sub> | **دەرنەکران**<br><sub>dernekran</sub><br><sub>/dæɾnækɾaːn/</sub> | **دەردەکران**<br><sub>derdekran</sub><br><sub>/dæɾdækɾaːn/</sub> | **دەرنەدەکران**<br><sub>dernedekran</sub><br><sub>/dæɾnædækɾaːn/</sub> |
+| 1sg | من | **دەرکردرام**<br><sub>derkiridram</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːm/</sub> | **دەر نەکرام**<br><sub>also دەرنەکرام</sub><br><sub>der nekram</sub><br><sub>/dæɾ nækɾaːm/</sub> | **دەر دەکرام**<br><sub>also دەردەکرام</sub><br><sub>der dekram</sub><br><sub>/dæɾ dækɾaːm/</sub> | **دەر نەدەکرام**<br><sub>also دەرنەدەکرام</sub><br><sub>der nedekram</sub><br><sub>/dæɾ nædækɾaːm/</sub> |
+| 2sg | تۆ | **دەرکردرایت**<br><sub>derkiridrayt</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːjt/</sub> | **دەر نەکرایت**<br><sub>also دەرنەکرایت</sub><br><sub>der nekrayt</sub><br><sub>/dæɾ nækɾaːjt/</sub> | **دەر دەکرایت**<br><sub>also دەردەکرایت</sub><br><sub>der dekrayt</sub><br><sub>/dæɾ dækɾaːjt/</sub> | **دەر نەدەکرایت**<br><sub>also دەرنەدەکرایت</sub><br><sub>der nedekrayt</sub><br><sub>/dæɾ nædækɾaːjt/</sub> |
+| 3sg | ئەو | **دەرکردرا**<br><sub>derkiridra</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaː/</sub> | **دەر نەکرا**<br><sub>also دەرنەکرا</sub><br><sub>der nekra</sub><br><sub>/dæɾ nækɾaː/</sub> | **دەر دەکرا**<br><sub>also دەردەکرا</sub><br><sub>der dekra</sub><br><sub>/dæɾ dækɾaː/</sub> | **دەر نەدەکرا**<br><sub>also دەرنەدەکرا</sub><br><sub>der nedekra</sub><br><sub>/dæɾ nædækɾaː/</sub> |
+| 1pl | ئێمە | **دەرکردراین**<br><sub>derkiridrayn</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːjn/</sub> | **دەر نەکراین**<br><sub>also دەرنەکراین</sub><br><sub>der nekrayn</sub><br><sub>/dæɾ nækɾaːjn/</sub> | **دەر دەکراین**<br><sub>also دەردەکراین</sub><br><sub>der dekrayn</sub><br><sub>/dæɾ dækɾaːjn/</sub> | **دەر نەدەکراین**<br><sub>also دەرنەدەکراین</sub><br><sub>der nedekrayn</sub><br><sub>/dæɾ nædækɾaːjn/</sub> |
+| 2pl | ئێوە | **دەرکردران**<br><sub>derkiridran</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːn/</sub> | **دەر نەکران**<br><sub>also دەرنەکران</sub><br><sub>der nekran</sub><br><sub>/dæɾ nækɾaːn/</sub> | **دەر دەکران**<br><sub>also دەردەکران</sub><br><sub>der dekran</sub><br><sub>/dæɾ dækɾaːn/</sub> | **دەر نەدەکران**<br><sub>also دەرنەدەکران</sub><br><sub>der nedekran</sub><br><sub>/dæɾ nædækɾaːn/</sub> |
+| 3pl | ئەوان | **دەرکردران**<br><sub>derkiridran</sub><br><sub>/dæɾk(ɯ)ɾ(ɯ)dɾaːn/</sub> | **دەر نەکران**<br><sub>also دەرنەکران</sub><br><sub>der nekran</sub><br><sub>/dæɾ nækɾaːn/</sub> | **دەر دەکران**<br><sub>also دەردەکران</sub><br><sub>der dekran</sub><br><sub>/dæɾ dækɾaːn/</sub> | **دەر نەدەکران**<br><sub>also دەرنەدەکران</sub><br><sub>der nedekran</sub><br><sub>/dæɾ nædækɾaːn/</sub> |
 
 ## Passive: perfect tenses
 
@@ -140,12 +140,12 @@
 
 | person | pronoun | Passive perfect | Passive perfect negative | Passive past perfect | Passive past perfect negative |
 |---|---|---|---|---|---|
-| 1sg | من | **دەرکراوم**<br><sub>derkirawm</sub><br><sub>/dæɾk(ɯ)ɾaːwm/</sub> | **دەرنەکراوم**<br><sub>dernekrawm</sub><br><sub>/dæɾnækɾaːwm/</sub> | **دەرکرابووم**<br><sub>derkirabûm</sub><br><sub>/dæɾk(ɯ)ɾaːbuːm/</sub> | **دەرنەکرابووم**<br><sub>dernekrabûm</sub><br><sub>/dæɾnækɾaːbuːm/</sub> |
-| 2sg | تۆ | **دەرکراویت**<br><sub>derkirawît</sub><br><sub>/dæɾk(ɯ)ɾaːwiːt/</sub> | **دەرنەکراویت**<br><sub>dernekrawît</sub><br><sub>/dæɾnækɾaːwiːt/</sub> | **دەرکرابوویت**<br><sub>derkirabûyt</sub><br><sub>/dæɾk(ɯ)ɾaːbuːjt/</sub> | **دەرنەکرابوویت**<br><sub>dernekrabûyt</sub><br><sub>/dæɾnækɾaːbuːjt/</sub> |
-| 3sg | ئەو | **دەرکراوە**<br><sub>derkirawe</sub><br><sub>/dæɾk(ɯ)ɾaːwæ/</sub> | **دەرنەکراوە**<br><sub>dernekrawe</sub><br><sub>/dæɾnækɾaːwæ/</sub> | **دەرکرابوو**<br><sub>derkirabû</sub><br><sub>/dæɾk(ɯ)ɾaːbuː/</sub> | **دەرنەکرابوو**<br><sub>dernekrabû</sub><br><sub>/dæɾnækɾaːbuː/</sub> |
-| 1pl | ئێمە | **دەرکراوین**<br><sub>derkirawîn</sub><br><sub>/dæɾk(ɯ)ɾaːwiːn/</sub> | **دەرنەکراوین**<br><sub>dernekrawîn</sub><br><sub>/dæɾnækɾaːwiːn/</sub> | **دەرکرابووین**<br><sub>derkirabûyn</sub><br><sub>/dæɾk(ɯ)ɾaːbuːjn/</sub> | **دەرنەکرابووین**<br><sub>dernekrabûyn</sub><br><sub>/dæɾnækɾaːbuːjn/</sub> |
-| 2pl | ئێوە | **دەرکراون**<br><sub>derkirawn</sub><br><sub>/dæɾk(ɯ)ɾaːwn/</sub> | **دەرنەکراون**<br><sub>dernekrawn</sub><br><sub>/dæɾnækɾaːwn/</sub> | **دەرکرابوون**<br><sub>derkirabûn</sub><br><sub>/dæɾk(ɯ)ɾaːbuːn/</sub> | **دەرنەکرابوون**<br><sub>dernekrabûn</sub><br><sub>/dæɾnækɾaːbuːn/</sub> |
-| 3pl | ئەوان | **دەرکراون**<br><sub>derkirawn</sub><br><sub>/dæɾk(ɯ)ɾaːwn/</sub> | **دەرنەکراون**<br><sub>dernekrawn</sub><br><sub>/dæɾnækɾaːwn/</sub> | **دەرکرابوون**<br><sub>derkirabûn</sub><br><sub>/dæɾk(ɯ)ɾaːbuːn/</sub> | **دەرنەکرابوون**<br><sub>dernekrabûn</sub><br><sub>/dæɾnækɾaːbuːn/</sub> |
+| 1sg | من | **دەر کراوم**<br><sub>also دەرکراوم</sub><br><sub>der kirawm</sub><br><sub>/dæɾ k(ɯ)ɾaːwm/</sub> | **دەر نەکراوم**<br><sub>also دەرنەکراوم</sub><br><sub>der nekrawm</sub><br><sub>/dæɾ nækɾaːwm/</sub> | **دەر کرابووم**<br><sub>also دەرکرابووم</sub><br><sub>der kirabûm</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːm/</sub> | **دەر نەکرابووم**<br><sub>also دەرنەکرابووم</sub><br><sub>der nekrabûm</sub><br><sub>/dæɾ nækɾaːbuːm/</sub> |
+| 2sg | تۆ | **دەر کراویت**<br><sub>also دەرکراویت</sub><br><sub>der kirawît</sub><br><sub>/dæɾ k(ɯ)ɾaːwiːt/</sub> | **دەر نەکراویت**<br><sub>also دەرنەکراویت</sub><br><sub>der nekrawît</sub><br><sub>/dæɾ nækɾaːwiːt/</sub> | **دەر کرابوویت**<br><sub>also دەرکرابوویت</sub><br><sub>der kirabûyt</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːjt/</sub> | **دەر نەکرابوویت**<br><sub>also دەرنەکرابوویت</sub><br><sub>der nekrabûyt</sub><br><sub>/dæɾ nækɾaːbuːjt/</sub> |
+| 3sg | ئەو | **دەر کراوە**<br><sub>also دەرکراوە</sub><br><sub>der kirawe</sub><br><sub>/dæɾ k(ɯ)ɾaːwæ/</sub> | **دەر نەکراوە**<br><sub>also دەرنەکراوە</sub><br><sub>der nekrawe</sub><br><sub>/dæɾ nækɾaːwæ/</sub> | **دەر کرابوو**<br><sub>also دەرکرابوو</sub><br><sub>der kirabû</sub><br><sub>/dæɾ k(ɯ)ɾaːbuː/</sub> | **دەر نەکرابوو**<br><sub>also دەرنەکرابوو</sub><br><sub>der nekrabû</sub><br><sub>/dæɾ nækɾaːbuː/</sub> |
+| 1pl | ئێمە | **دەر کراوین**<br><sub>also دەرکراوین</sub><br><sub>der kirawîn</sub><br><sub>/dæɾ k(ɯ)ɾaːwiːn/</sub> | **دەر نەکراوین**<br><sub>also دەرنەکراوین</sub><br><sub>der nekrawîn</sub><br><sub>/dæɾ nækɾaːwiːn/</sub> | **دەر کرابووین**<br><sub>also دەرکرابووین</sub><br><sub>der kirabûyn</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːjn/</sub> | **دەر نەکرابووین**<br><sub>also دەرنەکرابووین</sub><br><sub>der nekrabûyn</sub><br><sub>/dæɾ nækɾaːbuːjn/</sub> |
+| 2pl | ئێوە | **دەر کراون**<br><sub>also دەرکراون</sub><br><sub>der kirawn</sub><br><sub>/dæɾ k(ɯ)ɾaːwn/</sub> | **دەر نەکراون**<br><sub>also دەرنەکراون</sub><br><sub>der nekrawn</sub><br><sub>/dæɾ nækɾaːwn/</sub> | **دەر کرابوون**<br><sub>also دەرکرابوون</sub><br><sub>der kirabûn</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːn/</sub> | **دەر نەکرابوون**<br><sub>also دەرنەکرابوون</sub><br><sub>der nekrabûn</sub><br><sub>/dæɾ nækɾaːbuːn/</sub> |
+| 3pl | ئەوان | **دەر کراون**<br><sub>also دەرکراون</sub><br><sub>der kirawn</sub><br><sub>/dæɾ k(ɯ)ɾaːwn/</sub> | **دەر نەکراون**<br><sub>also دەرنەکراون</sub><br><sub>der nekrawn</sub><br><sub>/dæɾ nækɾaːwn/</sub> | **دەر کرابوون**<br><sub>also دەرکرابوون</sub><br><sub>der kirabûn</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːn/</sub> | **دەر نەکرابوون**<br><sub>also دەرنەکرابوون</sub><br><sub>der nekrabûn</sub><br><sub>/dæɾ nækɾaːbuːn/</sub> |
 
 ## Passive: past subjunctive
 
@@ -153,12 +153,12 @@
 
 | person | pronoun | Passive past subjunctive | Passive perfect subjunctive | Passive past perfect subjunctive |
 |---|---|---|---|---|
-| 1sg | من | **دەرکرابام**<br><sub>derkirabam</sub><br><sub>/dæɾk(ɯ)ɾaːbaːm/</sub> | **دەرکرابێتم**<br><sub>derkirabêtim</sub><br><sub>/dæɾk(ɯ)ɾaːbeːt(ɯ)m/</sub> | **دەرکرابووبام**<br><sub>derkirabûbam</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaːm/</sub> |
-| 2sg | تۆ | **دەرکرابایت**<br><sub>derkirabayt</sub><br><sub>/dæɾk(ɯ)ɾaːbaːjt/</sub> | **دەرکرابێتیت**<br><sub>derkirabêtît</sub><br><sub>/dæɾk(ɯ)ɾaːbeːtiːt/</sub> | **دەرکرابووبایت**<br><sub>derkirabûbayt</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaːjt/</sub> |
-| 3sg | ئەو | **دەرکرابا**<br><sub>derkiraba</sub><br><sub>/dæɾk(ɯ)ɾaːbaː/</sub> | **دەرکرابێت**<br><sub>derkirabêt</sub><br><sub>/dæɾk(ɯ)ɾaːbeːt/</sub> | **دەرکرابووبا**<br><sub>derkirabûba</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaː/</sub> |
-| 1pl | ئێمە | **دەرکراباین**<br><sub>derkirabayn</sub><br><sub>/dæɾk(ɯ)ɾaːbaːjn/</sub> | **دەرکرابێتین**<br><sub>derkirabêtîn</sub><br><sub>/dæɾk(ɯ)ɾaːbeːtiːn/</sub> | **دەرکرابووباین**<br><sub>derkirabûbayn</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaːjn/</sub> |
-| 2pl | ئێوە | **دەرکرابان**<br><sub>derkiraban</sub><br><sub>/dæɾk(ɯ)ɾaːbaːn/</sub> | **دەرکرابێتن**<br><sub>derkirabêtin</sub><br><sub>/dæɾk(ɯ)ɾaːbeːt(ɯ)n/</sub> | **دەرکرابووبان**<br><sub>derkirabûban</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaːn/</sub> |
-| 3pl | ئەوان | **دەرکرابان**<br><sub>derkiraban</sub><br><sub>/dæɾk(ɯ)ɾaːbaːn/</sub> | **دەرکرابێتن**<br><sub>derkirabêtin</sub><br><sub>/dæɾk(ɯ)ɾaːbeːt(ɯ)n/</sub> | **دەرکرابووبان**<br><sub>derkirabûban</sub><br><sub>/dæɾk(ɯ)ɾaːbuːbaːn/</sub> |
+| 1sg | من | **دەر کرابام**<br><sub>also دەرکرابام</sub><br><sub>der kirabam</sub><br><sub>/dæɾ k(ɯ)ɾaːbaːm/</sub> | **دەر کرابێتم**<br><sub>also دەرکرابێتم</sub><br><sub>der kirabêtim</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːt(ɯ)m/</sub> | **دەر کرابووبام**<br><sub>also دەرکرابووبام</sub><br><sub>der kirabûbam</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaːm/</sub> |
+| 2sg | تۆ | **دەر کرابایت**<br><sub>also دەرکرابایت</sub><br><sub>der kirabayt</sub><br><sub>/dæɾ k(ɯ)ɾaːbaːjt/</sub> | **دەر کرابێتیت**<br><sub>also دەرکرابێتیت</sub><br><sub>der kirabêtît</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːtiːt/</sub> | **دەر کرابووبایت**<br><sub>also دەرکرابووبایت</sub><br><sub>der kirabûbayt</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaːjt/</sub> |
+| 3sg | ئەو | **دەر کرابا**<br><sub>also دەرکرابا</sub><br><sub>der kiraba</sub><br><sub>/dæɾ k(ɯ)ɾaːbaː/</sub> | **دەر کرابێت**<br><sub>also دەرکرابێت</sub><br><sub>der kirabêt</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːt/</sub> | **دەر کرابووبا**<br><sub>also دەرکرابووبا</sub><br><sub>der kirabûba</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaː/</sub> |
+| 1pl | ئێمە | **دەر کراباین**<br><sub>also دەرکراباین</sub><br><sub>der kirabayn</sub><br><sub>/dæɾ k(ɯ)ɾaːbaːjn/</sub> | **دەر کرابێتین**<br><sub>also دەرکرابێتین</sub><br><sub>der kirabêtîn</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːtiːn/</sub> | **دەر کرابووباین**<br><sub>also دەرکرابووباین</sub><br><sub>der kirabûbayn</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaːjn/</sub> |
+| 2pl | ئێوە | **دەر کرابان**<br><sub>also دەرکرابان</sub><br><sub>der kiraban</sub><br><sub>/dæɾ k(ɯ)ɾaːbaːn/</sub> | **دەر کرابێتن**<br><sub>also دەرکرابێتن</sub><br><sub>der kirabêtin</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːt(ɯ)n/</sub> | **دەر کرابووبان**<br><sub>also دەرکرابووبان</sub><br><sub>der kirabûban</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaːn/</sub> |
+| 3pl | ئەوان | **دەر کرابان**<br><sub>also دەرکرابان</sub><br><sub>der kiraban</sub><br><sub>/dæɾ k(ɯ)ɾaːbaːn/</sub> | **دەر کرابێتن**<br><sub>also دەرکرابێتن</sub><br><sub>der kirabêtin</sub><br><sub>/dæɾ k(ɯ)ɾaːbeːt(ɯ)n/</sub> | **دەر کرابووبان**<br><sub>also دەرکرابووبان</sub><br><sub>der kirabûban</sub><br><sub>/dæɾ k(ɯ)ɾaːbuːbaːn/</sub> |
 
 ## Imperative
 
@@ -166,8 +166,8 @@
 
 | person | pronoun | Imperative | Prohibitive |
 |---|---|---|---|
-| 2sg | تۆ | **دەربکە**<br><sub>derbike</sub><br><sub>/dæɾb(ɯ)kæ/</sub> | **دەرمەکە**<br><sub>dermeke</sub><br><sub>/dæɾmækæ/</sub> |
-| 2pl | ئێوە | **دەربکەن**<br><sub>derbiken</sub><br><sub>/dæɾb(ɯ)kæn/</sub> | **دەرمەکەن**<br><sub>dermeken</sub><br><sub>/dæɾmækæn/</sub> |
+| 2sg | تۆ | **دەر بکە**<br><sub>also دەربکە</sub><br><sub>der bike</sub><br><sub>/dæɾ b(ɯ)kæ/</sub> | **دەر مەکە**<br><sub>also دەرمەکە</sub><br><sub>der meke</sub><br><sub>/dæɾ mækæ/</sub> |
+| 2pl | ئێوە | **دەر بکەن**<br><sub>also دەربکەن</sub><br><sub>der biken</sub><br><sub>/dæɾ b(ɯ)kæn/</sub> | **دەر مەکەن**<br><sub>also دەرمەکەن</sub><br><sub>der meken</sub><br><sub>/dæɾ mækæn/</sub> |
 
 ## Other forms
 

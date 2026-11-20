@@ -64,6 +64,9 @@ SLOTS: tuple[tuple[str, tuple[Affix, ...]], ...] = (
         _a("ە", "E", "C", copula="3sg|ezafe.def|dem|voc|def.short"),
         _a("ە", "E", "UU", copula="3sg|ezafe.def|dem|voc|def.short"),
         _a("یە", "E", "V", copula="3sg|dem"),
+        # vocative: masculine ە is one of the readings above; feminine ێ (کچێ) and plural ینە (کچینە, کوڕینە)
+        _a("ێ", "VOC", "C", "NOUN", vocative="f"),
+        _a("ینە", "VOC.PL", "C", "NOUN", vocative="pl", number="pl"),
         # person endings only after -دا (من لە ماڵدام): elsewhere they are the enclitics
         _a("م", "COP.1SG", "DA", copula="1sg"),
         _a("یت", "COP.2SG", "DA", copula="2sg"),
@@ -346,6 +349,13 @@ class CkbAnalyzer:
                     score -= 6.0  # a typo for لەگەڵ, not لە+گەل
                 if af.tag == "E" and (word in self.lexicon or word in self.fw):
                     score -= 3.0  # a listed word stays whole
+                if af.tag.startswith("VOC"):
+                    # only on a listed word, alone: کچ+ینە, but not شیرینە (listed); ێ stays behind the indefinite
+                    if stem not in self.lexicon or len(segs) > 1:
+                        score -= 12.0
+                    elif af.tag == "VOC.PL" and self._not_plural_vocative(word, stem):
+                        score -= 12.0
+                    score -= 0.2 if af.tag == "VOC" else 3.0  # ینە is rare in running text: ranked low, still returned
                 if (af.tag == "E" or af.tag.startswith("COP")) and (self.verbs.lookup(word) or self.verbs.lookup(word[: -len(form)])):
                     score -= 12.0  # a verb is a verb: بووە, کردە, نیشاندام
                 feats.update(dict(af.features))
@@ -353,24 +363,49 @@ class CkbAnalyzer:
             # the listed word behind a changed stem: ماس+ێکە is ماسی, پەنجەر+ان is پەنجەرە
             if any(f in ("ێکە", "ێکان") for f, _, _ in segs) and stem + "ی" in self.lexicon:
                 stem += "ی"
-            elif stem not in self.lexicon and stem + "ە" in self.lexicon and any(t == "PL" for _, t, _ in segs):
-                score += self._stem_score(stem + "ە") - self._stem_score(stem)
-                stem += "ە"
-            pos = self._choose_pos(stem, pos_hint, inflected=bool(segs))
-            if self._ordinal(stem):
-                pos = "ADJ"
-                feats.setdefault("numtype", "ord")
-            if stem in self.fw and not segs:
-                pos, extra = self.fw[stem]
-                feats.update(extra)
-            elif stem in CLITIC_ADPOSITIONS and all(t in ENCLITIC_TAGS for _, t, _ in segs):
-                pos = "ADP"
-                feats["adptype"] = "bare"
-                score += 5.0
-            seg_list = prefix + [(lemma_seg(word, stem, segs), "STEM")] + [(f, t) for f, t, _ in segs]
-            surface = "".join(p for p, _ in prefix) + word
-            results.append(Analysis(surface, stem, pos, feats, seg_list, round(score - 0.3 * len(prefix), 3)))
+            elif stem + "ە" in self.lexicon and any(t == "PL" for _, t, _ in segs):
+                gain = self._stem_score(stem + "ە") - self._stem_score(stem)
+                if stem not in self.lexicon:
+                    score += gain
+                    stem += "ە"
+                elif (any(f == "ان" and t == "PL" for f, t, _ in segs) and not _ends_with_vowel(stem)
+                      and stem not in self.fw and stem + "ان" not in self.lexicon and word not in self.lexicon and not self.verbs.lookup(word)):
+                    # both listed: پەنجەر+ان or پەنجەرە with ە dropped; the commoner word wins (پەنجەرە, but شار).
+                    # Not after a vowel (خۆیان), not for a verb (نامان, دایان), and not when the plural or the
+                    # whole word is listed (پلان, کێشان, کۆبانی).
+                    results.append(self._nominal_result(word, prefix, stem + "ە", segs, dict(feats), pos_hint, score + gain - 0.3))
+            results.append(self._nominal_result(word, prefix, stem, segs, feats, pos_hint, score))
         return results
+
+    def _not_plural_vocative(self, word: str, stem: str) -> bool:
+        """ینە is rarely the vocative in running text: ڕەنگین+ە, زێڕین+ە, چوارەمین+ە, بە+زۆرینە.
+
+        Keep it for a noun (or a noun listed as ADJ, like کوڕ) whose ین-form is not listed or is rare
+        (کوڕ+ینە; کوڕین is under 1% of کوڕ).
+        """
+        if word in self.lexicon or self._ordinal(stem) or not self.lexicon.pos_of(stem) & {"NOUN", "ADJ"}:
+            return True
+        if self.verbs.lookup(stem + "ین"):
+            return True  # کردین+ە, بمێنین: a verb with the directional ە
+        if any(word.startswith(p) and word[len(p) :] in self.lexicon for p in ("بە", "لە", "بۆ")):
+            return True  # بە+زۆرینە, لە+چینە
+        return self.lexicon.freq(stem + "ین") * 100 >= max(self.lexicon.freq(stem), 1)
+
+    def _nominal_result(self, word, prefix, stem, segs, feats, pos_hint, score) -> Analysis:
+        pos = self._choose_pos(stem, pos_hint, inflected=bool(segs))
+        if self._ordinal(stem):
+            pos = "ADJ"
+            feats.setdefault("numtype", "ord")
+        if stem in self.fw and not segs:
+            pos, extra = self.fw[stem]
+            feats.update(extra)
+        elif stem in CLITIC_ADPOSITIONS and all(t in ENCLITIC_TAGS for _, t, _ in segs):
+            pos = "ADP"
+            feats["adptype"] = "bare"
+            score += 5.0
+        seg_list = prefix + [(lemma_seg(word, stem, segs), "STEM")] + [(f, t) for f, t, _ in segs]
+        surface = "".join(p for p, _ in prefix) + word
+        return Analysis(surface, stem, pos, feats, seg_list, round(score - 0.3 * len(prefix), 3))
 
     def _manner(self, word: str) -> list[Analysis]:
         """بە+خێرا+یی, بە+جوان+ی: the adverbs of manner, when the middle is a known word."""
@@ -631,7 +666,11 @@ class CkbAnalyzer:
         word = token if normalized else normalize_word(token)
         if not word:
             return []
-        results = self._verbal(word) + self._nominal(word, [])
+        verbal = self._verbal(word)
+        nominal = self._nominal(word, [])
+        if verbal:  # دەبین+ە, نامین+ە are verbs, not vocatives
+            nominal = [a for a in nominal if "vocative" not in a.features]
+        results = verbal + nominal
         for pre, tag in PROCLITICS:
             rest = word[len(pre) :].lstrip("‌")
             if word.startswith(pre) and len(rest) >= 2 and word not in self.lexicon and word not in self.fw:
