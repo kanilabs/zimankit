@@ -4,6 +4,14 @@ All notable changes to zimankit are recorded here. The format follows [Keep a Ch
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-11-21
+
+No changes to the library. This release is published from GitHub Actions through PyPI Trusted Publishing on the kanilabs/zimankit repository, so its files carry provenance attestations again (0.5.0 was uploaded without them).
+
+### Added
+
+- `uv.lock` is committed.
+
 ## [0.5.0] - 2026-11-20
 
 Checked against the Sorani grammar sources collected from the rezmanikurdi blog, Hashemi's grammar and ڕێنووس pages, and the Kurdish Academy spelling pamphlet; the sources are listed in [chapter 21](docs/21-references.md).
@@ -127,7 +135,8 @@ The first release.
 - **Releases**: wheel, sdist, a Debian package and source archives, built by `scripts/build_release.sh` and published by GitHub Actions when a version tag is pushed. Continuous integration runs the tests on Python 3.11 to 3.13.
 - **Website**: <https://kanilabs.github.io/zimankit/> has the guide, the story of the logo, the brand kit and a live playground that runs zimankit in the browser.
 
-[Unreleased]: https://github.com/kanilabs/zimankit/compare/v0.5.0...develop
+[Unreleased]: https://github.com/kanilabs/zimankit/compare/v0.5.1...develop
+[0.5.1]: https://github.com/kanilabs/zimankit/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/kanilabs/zimankit/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/kanilabs/zimankit/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/kanilabs/zimankit/compare/v0.3.0...v0.3.1
